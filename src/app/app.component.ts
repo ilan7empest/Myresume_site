@@ -10,6 +10,16 @@ export class AppComponent implements OnInit {
   storedTheme: string = localStorage.getItem('theme-color');
   storedDirection: string = localStorage.getItem('dir');
 
+  onActivate(event) {
+    let scrollToTop = window.setInterval(() => {
+      let pos = window.pageYOffset;
+      if (pos > 0) {
+        window.scrollTo(0, pos - 20); // how far to scroll on each step
+      } else {
+        window.clearInterval(scrollToTop);
+      }
+    }, 16);
+  }
 
   ngOnInit() {
     this.storedTheme != null ? document.body.setAttribute('data-theme', this.storedTheme) : document.body.setAttribute('data-theme', 'light'); //set theme
