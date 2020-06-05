@@ -12,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AppScrollTopComponent } from './components/app-scroll-top/app-scroll-top.component';
 import { SelectLanguageComponent } from './components/select-language/select-language.component';
 import { ThemePickerComponent } from './components/theme-picker/theme-picker.component';
+import { HomeComponent } from './routing/home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ThemePickerComponent } from './components/theme-picker/theme-picker.com
     FooterComponent,
     AppScrollTopComponent,
     SelectLanguageComponent,
-    ThemePickerComponent
+    ThemePickerComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

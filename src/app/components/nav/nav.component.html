@@ -5,19 +5,32 @@
 <nav id="nav" class="d-flex align-items-start align-items-md-center flex-column flex-md-row"
     [ngClass]="{ 'open': tsNav }">
     <ul class="d-flex main-nav">
-        <li class="forums">
-            <button type="text" class="" routerLink="input-styling" routerLinkActive="active-link"
-                [routerLinkActiveOptions]="{exact:
-        true}">
-                <!-- <i class="icon ion ion-md-paper"></i> -->
-                <label>Forums</label>
+        <li class="home">
+            <button type="text" class="" routerLink="home" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+                <label>home</label>
+            </button>
+        </li>
+        <li class="professional">
+            <button type="text" class="" routerLink="professional" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+                <label>professional</label>
+            </button>
+        </li>
+        <li class="experience">
+            <button type="text" class="" routerLink="experience" routerLinkActive="active-link"
+                [routerLinkActiveOptions]="{exact: true}">
+                <label>experience</label>
             </button>
         </li>
         <li class="gallery">
-            <button type="text" class="" routerLink="gallery" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
-        true}">
-                <!-- <i class="icon ion ion-md-images"></i> -->
-                <label>Gallery</label>
+            <button type="text" class="" routerLink="gallery" routerLinkActive="active-link"
+                [routerLinkActiveOptions]="{exact: true}">
+                <label>gallery</label>
+            </button>
+        </li>
+        <li class="contact">
+            <button type="text" class="" routerLink="contact" routerLinkActive="active-link"
+                [routerLinkActiveOptions]="{exact: true}">
+                <label>contact</label>
             </button>
         </li>
     </ul>
