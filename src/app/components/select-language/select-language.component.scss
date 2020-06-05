@@ -1,0 +1,7 @@
+// Switch themes style
+.select-language-btn{
+    &.selected{
+        color: var(--color-primary);
+        font-weight: bold;
+    }
+}
