@@ -1,0 +1,27 @@
+:root{
+    --font-family-base: 'Montserrat', sans-serif;
+    --font-family-base-rtl: 'Assistant', sans-serif;
+    --font-family-oswald: 'Oswald', sans-serif;
+}
+
+h1 {
+    @extend %oswald;
+    @include font-size-map($h1-font-size);
+    @include h-global-style(false); 
+}
+h2{
+    @extend %oswald;
+    @include font-size-map($h2-font-size);
+    @include h-global-style(false);  
+}
+h3 {
+    @extend %oswald;
+    @include font-size-map($h3-font-size);
+}
+h4{
+    @include font-size-map($h4-font-size);
+}
+p{
+    @include h-global-style(false); 
+}
+  

@@ -1,0 +1,57 @@
+$font-weight-base: normal;
+$line-height-base: 1.5;
+%oswald{
+    font-family: var(--font-family-oswald);
+    [dir='rtl'] &{
+        font-family: var(--font-family-base-rtl) !important;
+    }
+}
+
+@mixin font-size-map($fs-map, $fs-breakpoints: $grid-breakpoints) {
+    @each $fs-breakpoint, $fs-font-size in $fs-map {
+        @if $fs-breakpoint == null {
+            @media screen and (min-width: 0) {
+                font-size: $fs-font-size;
+            }
+        }
+        @else {
+            // If $fs-font-size is a key that exists in
+            // $fs-breakpoints, use the value
+            @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+                $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+            }
+            @media screen and (min-width: $fs-breakpoint) {
+                font-size: $fs-font-size;
+            }
+        }
+    }
+}
+
+
+
+// body font size
+$browser-context: 16;
+
+// typography scale
+$body-font-size: (null: 14px, sm: 16px);
+$h1-font-size: (null: 4rem, sm: 4rem, md: 3.9rem, lg: 4.2rem, xl: 4.5rem);
+$h2-font-size: (null: 1.2rem, sm: 1.6rem);
+$h3-font-size: (null: 2rem, xl: 2.4rem);
+$h4-font-size: (null: 1.2rem, sm: 1.4rem);
+$nav-font-size: (null: 1rem, sm: .875rem);
+$button-font-size: (null: 1.2rem);
+
+%uppercase{
+    text-transform: uppercase;
+}
+
+//H global
+@mixin h-global-style($upper: true) {
+    @if ($upper == true ){
+        @extend %uppercase;
+    }
+    font-weight: normal;
+    line-height: $line-height-base !important;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}

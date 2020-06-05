@@ -1,0 +1,9 @@
+$button-colors: (
+    primary: (var(--color-success), var(--color-white), ''),
+    default: (var(--color-primary-dark), var(--color-white), var(--color-primary-darker))
+);
+
+$currency:(
+    dollar: "$",
+    percentage: "%"
+);

@@ -1,0 +1,25 @@
+<button type="button" class="toggle-nav align-self-center ml-4 mr-1 my-2 d-md-none" (click)="sideNavBtnToggle()"
+    [ngClass]="{ 'active': tsNav }">
+    <i class="nav-icon"></i>
+</button>
+<nav id="nav" class="d-flex align-items-start align-items-md-center flex-column flex-md-row"
+    [ngClass]="{ 'open': tsNav }">
+    <ul class="d-flex main-nav">
+        <li class="forums">
+            <button type="text" class="" routerLink="input-styling" routerLinkActive="active-link"
+                [routerLinkActiveOptions]="{exact:
+        true}">
+                <!-- <i class="icon ion ion-md-paper"></i> -->
+                <label>Forums</label>
+            </button>
+        </li>
+        <li class="gallery">
+            <button type="text" class="" routerLink="gallery" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+        true}">
+                <!-- <i class="icon ion ion-md-images"></i> -->
+                <label>Gallery</label>
+            </button>
+        </li>
+    </ul>
+    <a href="#" class="login-btn text-nowrap">{{'nav.signIn' | translate}}</a>
+</nav>

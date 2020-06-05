@@ -1,0 +1,9 @@
+.section-full{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    &.reset{
+        padding: 0;
+        min-height: 0;
+    }
+}

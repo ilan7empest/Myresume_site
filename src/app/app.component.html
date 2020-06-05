@@ -1,1 +1,10 @@
-<router-outlet></router-outlet>
+<div class="app-wrapper">
+    <ts-header id="header" class="d-flex"></ts-header>
+    <main id="main">
+        <!-- (activate)="onActivate($event)" -->
+        <router-outlet></router-outlet>
+        <ts-scroll-top></ts-scroll-top>
+    </main>
+    <!-- <aside></aside> -->
+    <ts-footer></ts-footer>
+</div>
