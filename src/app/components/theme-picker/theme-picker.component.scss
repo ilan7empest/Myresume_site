@@ -1,0 +1,97 @@
+// Switch themes style
+:host-context([data-theme="light"]){
+    .theme-picker-tpl{
+        label {
+            &.light{
+                background-color: var(--color-primary);
+            }
+        }
+    }
+}
+:host-context([data-theme="pink"]){
+    .theme-picker-tpl{
+        label{
+            &.pink{
+                background-color: var(--color-primary);
+            }
+        }
+    }
+}
+:host-context([data-theme="dark"]){
+    .theme-picker-tpl{
+        label{
+            &.dark{
+                background-color: var(--color-black);
+            }
+        }
+    }
+}
+.theme-picker-tpl{
+    position: relative;
+    .swatch-theme {
+        display: none;
+    }
+    &.open {
+        .swatch-theme {
+            display: block;
+        }
+    }
+    .toggle-menu-btn{
+        margin: .25rem;
+        position: relative;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: var(--color-contrast-low);
+        text-indent: -9999px;
+        overflow: hidden;
+       &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: var(--color-primary);
+            transform: translateX(10px);
+       }
+    }
+    .swatch-theme{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--color-bg);
+        border-radius: 4px;
+        box-shadow: 2px 1px 6px -1px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        min-width: 105px;
+        overflow: hidden;
+        li{
+            padding: .25rem;
+            cursor: pointer;
+            &:hover{
+                background-color: var(--color-contrast-lower);
+            }
+        }
+    }
+    [type=radio]{
+        opacity: 0;
+        position: fixed;
+        width: 0;
+        & + label {
+            margin: .25rem;
+            position: relative;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: var(--color-contrast-low);
+            cursor: pointer;
+            text-indent: -9999px;
+            & + span{
+                font-size: .675rem;
+                padding: 0 0 0 .5rem;
+            }
+        }
+    }
+}

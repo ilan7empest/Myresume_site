@@ -1,1 +1,12 @@
-<p>theme-picker works!</p>
+<div class="theme-picker-tpl" [ngClass]="{ 'open': themeMenuOpen}">
+    <button type="button" role="checkbox" id="themeSelector" class="reset toggle-menu-btn" (click)="toggleMain()"
+        aria-checked="false">Theme</button>
+    <ul class="swatch-theme">
+        <li *ngFor="let item of themeList; let i = index" class="d-flex align-items-center"
+            (click)="toggleTheme(item.theme)" id="{{item.theme}}">
+            <input type="radio" value="{{item.theme}}" name="selectTheme" />
+            <label for="{{item.theme}}" class="{{item.theme}}"></label>
+            <span>{{item.theme | titlecase}}</span>
+        </li>
+    </ul>
+</div>
