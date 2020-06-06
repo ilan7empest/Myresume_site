@@ -7,21 +7,22 @@
 h1 {
     @extend %oswald;
     @include font-size-map($h1-font-size);
-    @include h-global-style(false); 
+    @extend %h-global-style; 
 }
 h2{
     @extend %oswald;
     @include font-size-map($h2-font-size);
-    @include h-global-style(false);  
+    @extend %h-global-style; 
 }
 h3 {
     @extend %oswald;
     @include font-size-map($h3-font-size);
+    @extend %h-global-style;  
 }
 h4{
     @include font-size-map($h4-font-size);
 }
 p{
-    @include h-global-style(false); 
+    @extend %h-global-style; 
 }
   

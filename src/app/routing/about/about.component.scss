@@ -1,0 +1,18 @@
+@import "bundle";
+.about-tpl{
+    .intro-bg{
+        background: url('/assets/imgs/backgrounds/intro-bg.jpg') center top no-repeat transparent;
+        background-size: cover;
+        min-height: 300px;
+        @include media-breakpoint-up(md){
+            min-height: 650px;
+            background-attachment: fixed;
+        }
+    }
+    .title{
+        font-size: 2rem;
+        @include media-breakpoint-up(md){
+            font-size: 3rem;
+        }
+    }
+}
