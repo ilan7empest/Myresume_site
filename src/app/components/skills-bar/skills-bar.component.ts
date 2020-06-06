@@ -13,7 +13,7 @@ export class SkillsBarComponent implements OnInit {
 
   ngOnInit(): void {
     this.name = 'HTML';
-    this.width = 45;
+    this.width = 95;
   }
 
 }

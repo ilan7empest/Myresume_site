@@ -1,5 +1,5 @@
 $button-colors: (
-    primary: (var(--color-success), var(--color-white), ''),
+    primary: (var(--color-primary), var(--color-white), var(--color-primary-dark)),
     default: (var(--color-primary-dark), var(--color-white), var(--color-primary-darker))
 );
 

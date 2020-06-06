@@ -4,6 +4,9 @@
     --font-family-oswald: 'Oswald', sans-serif;
 }
 
+.uppercase{
+    @extend %uppercase;
+}
 h1 {
     @extend %oswald;
     @include font-size-map($h1-font-size);
