@@ -18,6 +18,7 @@ import { ExperienceComponent } from './routing/experience/experience.component';
 import { ContactComponent } from './routing/contact/contact.component';
 import { GalleryComponent } from './routing/gallery/gallery.component';
 import { AboutComponent } from './routing/about/about.component';
+import { SkillsBarComponent } from './components/skills-bar/skills-bar.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { AboutComponent } from './routing/about/about.component';
     ExperienceComponent,
     ContactComponent,
     GalleryComponent,
-    AboutComponent
+    AboutComponent,
+    SkillsBarComponent
   ],
   imports: [
     BrowserModule,

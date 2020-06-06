@@ -1,10 +1,11 @@
 @import "bundle";
 .skills-tpl{
-    margin-top: 50px;
     .skills-bg{
-        background: url('/assets/imgs/backgrounds/intro-bg.jpg') center top no-repeat transparent;
-        background-size: cover;
-        min-height: 300px;
+        // background: url('/assets/imgs/backgrounds/intro-bg.jpg') center top no-repeat transparent;
+        // background-size: cover;
+        background: rgb(94,94,94);
+        background: linear-gradient(90deg, rgba(94,94,94,1) 0%, rgba(171,171,171,1) 100%, rgba(3,73,106,1) 100%);
+        min-height: 300px;  
         @include media-breakpoint-up(md){
             min-height: 650px;
             background-attachment: fixed;

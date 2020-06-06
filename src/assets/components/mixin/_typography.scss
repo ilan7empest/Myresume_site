@@ -1,5 +1,3 @@
-$font-weight-base: normal;
-$line-height-base: 1.5;
 %oswald{
     font-family: var(--font-family-oswald);
     [dir='rtl'] &{
@@ -49,7 +47,6 @@ $nav-font-size: (null: 1rem, sm: .875rem);
 %h-global-style {
     text-transform: uppercase;
     font-weight: normal;
-    line-height: $line-height-base !important;
     margin-top: 0;
     margin-bottom: .5rem;
 }

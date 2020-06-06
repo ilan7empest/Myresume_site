@@ -21,8 +21,7 @@ body {
   height: 100%;
   font-family: var(--font-family-base);
   font-size: inherit;
-  font-weight: $font-weight-base;
-  line-height: $line-height-base !important;
+  font-weight: normal;
   background-color: var(--color-bg);
   color: var(--color-contrast-higher);
   direction: ltr;
