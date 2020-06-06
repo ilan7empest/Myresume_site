@@ -13,6 +13,11 @@ import { AppScrollTopComponent } from './components/app-scroll-top/app-scroll-to
 import { SelectLanguageComponent } from './components/select-language/select-language.component';
 import { ThemePickerComponent } from './components/theme-picker/theme-picker.component';
 import { HomeComponent } from './routing/home/home.component';
+import { SkillsComponent } from './routing/skills/skills.component';
+import { ExperienceComponent } from './routing/experience/experience.component';
+import { ContactComponent } from './routing/contact/contact.component';
+import { GalleryComponent } from './routing/gallery/gallery.component';
+import { AboutComponent } from './routing/about/about.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,12 @@ import { HomeComponent } from './routing/home/home.component';
     AppScrollTopComponent,
     SelectLanguageComponent,
     ThemePickerComponent,
-    HomeComponent
+    HomeComponent,
+    SkillsComponent,
+    ExperienceComponent,
+    ContactComponent,
+    GalleryComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

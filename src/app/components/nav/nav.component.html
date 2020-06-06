@@ -5,34 +5,33 @@
 <nav id="nav" class="d-flex align-items-start align-items-md-center flex-column flex-md-row"
     [ngClass]="{ 'open': tsNav }">
     <ul class="d-flex main-nav">
-        <li class="home">
+        <li class="about">
             <button type="text" class="" routerLink="home" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
-                <label>home</label>
+                <label>{{'nav.about' | translate}}</label>
             </button>
         </li>
-        <li class="professional">
-            <button type="text" class="" routerLink="professional" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
-                <label>professional</label>
+        <li class="skills">
+            <button type="text" class="" routerLink="skills" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+                <label>{{'nav.skills' | translate}}</label>
             </button>
         </li>
         <li class="experience">
             <button type="text" class="" routerLink="experience" routerLinkActive="active-link"
                 [routerLinkActiveOptions]="{exact: true}">
-                <label>experience</label>
+                <label>{{'nav.experience' | translate}}</label>
             </button>
         </li>
         <li class="gallery">
             <button type="text" class="" routerLink="gallery" routerLinkActive="active-link"
                 [routerLinkActiveOptions]="{exact: true}">
-                <label>gallery</label>
+                <label>{{'nav.gallery' | translate}}</label>
             </button>
         </li>
         <li class="contact">
             <button type="text" class="" routerLink="contact" routerLinkActive="active-link"
                 [routerLinkActiveOptions]="{exact: true}">
-                <label>contact</label>
+                <label>{{'nav.contact' | translate}}</label>
             </button>
         </li>
     </ul>
-    <a href="#" class="login-btn text-nowrap">{{'nav.signIn' | translate}}</a>
 </nav>
