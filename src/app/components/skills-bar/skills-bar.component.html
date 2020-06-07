@@ -1,7 +1,14 @@
 <div class="skills-bar">
-    <div class="d-flex align-items-center f--color-contrast-lower">
-        <span class="mr-3">{{name}}</span>
-        <div class="bar-fill mr-3" [ngStyle]="{'width.%':width}"></div>
-        <span>{{width}}%</span>
-    </div>
+    <ul class="skill-list d-flex flex-column f--color-contrast-lower">
+        <li class="d-flex align-items-center animated mb-4" animateOnScroll animationName="fadeIn">
+            <span class="name mr-3">{{name}}</span>
+            <div class="bar-fill mr-3" [ngStyle]="{'width.%':width}"></div>
+            <span>{{width}}%</span>
+        </li>
+        <li class="d-flex align-items-center animated" animateOnScroll animationName="fadeIn">
+            <span class="name mr-3">{{name}}</span>
+            <div class="bar-fill mr-3" [ngStyle]="{'width.%':width}"></div>
+            <span>{{width}}%</span>
+        </li>
+    </ul>
 </div>

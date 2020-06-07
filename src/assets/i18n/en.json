@@ -5,5 +5,12 @@
         "experience": "experience",
         "gallery": "gallery",
         "contact": "contact"
+    },
+    "about": {
+        "hi": "Hi",
+        "im": "I'm",
+        "name": "Ilan Kader",
+        "title": "UX/UI DESIGNER & WEB DEVELOPER"
+        
     }
 }

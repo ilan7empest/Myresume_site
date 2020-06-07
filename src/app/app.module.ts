@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 
+// import third-party module
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 import { AppComponent } from './app.component';
 import { I18nModule } from './i18n/i18n.module';
@@ -19,6 +21,7 @@ import { ContactComponent } from './routing/contact/contact.component';
 import { GalleryComponent } from './routing/gallery/gallery.component';
 import { AboutComponent } from './routing/about/about.component';
 import { SkillsBarComponent } from './components/skills-bar/skills-bar.component';
+import { ExperienceBarComponent } from './components/experience-bar/experience-bar.component';
 
 @NgModule({
   declarations: [
@@ -35,12 +38,14 @@ import { SkillsBarComponent } from './components/skills-bar/skills-bar.component
     ContactComponent,
     GalleryComponent,
     AboutComponent,
-    SkillsBarComponent
+    SkillsBarComponent,
+    ExperienceBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    I18nModule
+    I18nModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

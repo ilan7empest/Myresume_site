@@ -13,7 +13,7 @@
         min-width: auto;
         border-radius: 20px;
         padding: 0;
-        i{
+        [attribute*="ion-"]{
             padding: 8px 12px;
             font-size: 1.5rem;
             font-weight: bold;

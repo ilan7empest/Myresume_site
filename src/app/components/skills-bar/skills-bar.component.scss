@@ -4,5 +4,20 @@
     .bar-fill {
         height: 10px;
         background: var(--color-success-dark);
+        transition: opacity .4s ease-in;
+    }
+    .skill-list{
+        li{
+            transform: translateX(-70px);
+            transition: transform .4s ease-in;
+            &.fadeIn{
+                transform: translateX(0);
+            }
+        }
+        .name{
+            flex: 0 0 90px;
+            max-width: 90px;
+            text-align: left;
+        }
     }
 }

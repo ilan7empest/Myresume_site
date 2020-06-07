@@ -1,4 +1,4 @@
-<div class="d-flex ml-2">
+<div class="select-language-tpl d-flex ml-2">
     <button class="reset select-language-btn pr-2 mr-2 f--color-contrast-high border-right" #langSelect type="button"
         *ngFor="let lang of translate.getLangs()" [value]="lang"
         [attr.selected]="lang === translate.currentLang ? '' : null"
