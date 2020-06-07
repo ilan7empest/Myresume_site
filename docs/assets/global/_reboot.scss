@@ -1,0 +1,88 @@
+html {
+  @include font-size-map($body-font-size);
+  height: 100%;
+  -webkit-text-size-adjust: 100%; // 4
+  -ms-text-size-adjust: 100%; // 4
+  -ms-overflow-style: scrollbar; // 5
+}
+
+// IE10+ doesn't honor `<meta name="viewport">` in some cases.
+@at-root {
+  @-ms-viewport {
+    width: device-width;
+  }
+}
+
+
+.popup-open{
+  overflow: hidden;
+}
+body {
+  height: 100%;
+  font-family: var(--font-family-base);
+  font-size: inherit;
+  font-weight: normal;
+  background-color: var(--color-bg);
+  color: var(--color-contrast-higher);
+  direction: ltr;
+  text-align: left;
+  [dir="rtl"] & {
+    font-family: var(--font-family-base-rtl);
+    direction: rtl;
+    text-align: right;
+  }
+}
+ol,
+ul,
+dl {
+  display: flex;
+  list-style-type: none;
+  margin: 0;;
+  padding: 0;
+}
+
+a {
+  color: var(--color-primary);
+  background-color: transparent; // Remove the gray background on active links in IE 10.
+  -webkit-text-decoration-skip: objects; // Remove gaps in links underline in iOS 8+ and Safari 8+.
+
+  &:hover {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+  }
+}
+
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+
+label {
+  // Allow labels to use `margin` for spacing.
+  display: inline-block;
+  margin-bottom: .5rem
+}
+
+input{
+  border: 0;
+}
+
+
+button,
+input {
+  overflow: visible; // Show the overflow in Edge
+  &:focus{
+    outline: none;
+  }
+}
