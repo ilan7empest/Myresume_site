@@ -102,6 +102,11 @@
             "styles": [
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/assets/global"
+              ]
+            },
             "scripts": []
           }
         },
@@ -132,7 +137,13 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "options": {
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/assets/global"
+              ]
+            }
+          }
         }
       }
     }
