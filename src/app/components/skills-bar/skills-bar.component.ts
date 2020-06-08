@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills-bar.component.scss']
 })
 export class SkillsBarComponent implements OnInit {
-  name: any;
-  width: any;
+  // name: any;
+  // width: any;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.name = 'HTML';
-    this.width = 95;
+    // this.name = 'HTML';
+    // this.width = 95;
   }
 }
