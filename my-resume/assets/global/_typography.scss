@@ -16,6 +16,7 @@ h2{
     @extend %oswald;
     @include font-size-map($h2-font-size);
     @extend %h-global-style; 
+    font-weight: bold !important;
 }
 h3 {
     @extend %oswald;
