@@ -8,15 +8,13 @@
 
     @each $prop, $abbrev in (margin: m, padding: p) {
       @each $size, $length in $spacers {
-        .#{$abbrev}r#{$infix}-#{$size},
-        .#{$abbrev}x#{$infix}-#{$size} {
+        .#{$abbrev}r#{$infix}-#{$size}{
           #{$prop}-left: $length !important;
-          #{$prop}-right: 0 !important;
+          #{$prop}-right: initial !important;
         }
-        .#{$abbrev}l#{$infix}-#{$size},
-        .#{$abbrev}x#{$infix}-#{$size} {
+        .#{$abbrev}l#{$infix}-#{$size} {
           #{$prop}-right: $length !important;
-          #{$prop}-left: 0 !important;
+          #{$prop}-left: initial !important;
         }
       }
     }
@@ -25,13 +23,11 @@
     @each $size, $length in $spacers {
       @if $size != 0 {
 
-        .mr#{$infix}-n#{$size},
-        .mx#{$infix}-n#{$size} {
+        .mr#{$infix}-n#{$size}{
           margin-left: -$length !important;
           margin-right: 0 !important;
         }
-        .ml#{$infix}-n#{$size},
-        .mx#{$infix}-n#{$size} {
+        .ml#{$infix}-n#{$size} {
           margin-right: -$length !important;
           margin-left: 0 !important;
         }

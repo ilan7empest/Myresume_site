@@ -15,5 +15,4 @@ export class SkillsBarComponent implements OnInit {
     this.name = 'HTML';
     this.width = 95;
   }
-
 }

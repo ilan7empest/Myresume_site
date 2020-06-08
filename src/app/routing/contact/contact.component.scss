@@ -1,0 +1,38 @@
+.contact-tpl{
+    padding: 50px 0;
+    .animated{
+        transform: translateY(-70px);
+        transition: all .6s ease-in;
+        &.fadeIn{
+            transform: translateY(0);
+        }
+    }
+    i{
+        border-radius: 50%;
+        background-color: var(--color-primary);
+        color: var(--color-contrast-lower);
+        padding: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        transform: rotateY(0);
+        transition: all .5s ease-in-out;
+    }
+    label{
+        cursor: pointer;
+        transition: color .5s ease-in-out;
+    }
+    a{
+        color: var(--color-primary);
+        display: flex;
+        flex-direction: column;
+        &:hover{
+            i{
+                transform: rotateY(360deg);
+                background-color: var(--color-primary-dark);
+            }
+            label{
+                color: var(--color-primary-dark);
+            }
+        }
+    }
+}

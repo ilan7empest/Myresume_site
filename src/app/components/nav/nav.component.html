@@ -1,4 +1,4 @@
-<button type="button" class="toggle-nav align-self-center ml-4 mr-1 my-2 d-md-none" (click)="sideNavBtnToggle()"
+<button type="button" class="toggle-nav align-self-center my-2 d-md-none" (click)="sideNavBtnToggle()"
     [ngClass]="{ 'active': tsNav }">
     <i class="nav-icon"></i>
 </button>
@@ -10,15 +10,16 @@
                 <label>{{'nav.about' | translate}}</label>
             </button>
         </li>
-        <li class="skills">
-            <button type="text" class="" routerLink="home#skills" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
-                <label>{{'nav.skills' | translate}}</label>
-            </button>
-        </li>
         <li class="experience">
             <button type="text" class="" routerLink="home#experience" routerLinkActive="active-link"
                 [routerLinkActiveOptions]="{exact: true}">
                 <label>{{'nav.experience' | translate}}</label>
+            </button>
+        </li>
+        <li class="skills">
+            <button type="text" class="" routerLink="home#skills" routerLinkActive="active-link"
+                [routerLinkActiveOptions]="{exact: true}">
+                <label>{{'nav.skills' | translate}}</label>
             </button>
         </li>
         <li class="gallery">
