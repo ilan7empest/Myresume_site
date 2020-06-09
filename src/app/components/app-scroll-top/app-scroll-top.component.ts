@@ -13,8 +13,7 @@ export class AppScrollTopComponent implements OnInit {
   onWindowScroll() {
     if (document.body.scrollTop > 130 || document.documentElement.scrollTop > 130) {
       this.windowScrolled = true;
-    }
-    else {
+    } else {
       this.windowScrolled = false;
     }
   }

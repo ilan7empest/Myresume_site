@@ -1,3 +1,4 @@
+@import "bundle";
 .app-wrapper{
     height: 100%;
     main{
@@ -8,7 +9,7 @@
         min-height: 100%;
         height: auto !important;
         margin: 0 auto;
-        padding: 0 0 100px;
+        padding: 0 0 $app-layout-padding;
         & > section{
             padding: 20px 0;
         }

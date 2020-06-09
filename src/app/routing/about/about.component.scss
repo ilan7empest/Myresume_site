@@ -11,5 +11,11 @@
             background-attachment: fixed;
         }
     }
-
+    .animated{
+        transform: translateY(-50px);
+        transition: all .6s ease-in;
+        &.fadeIn{
+            transform: translateY(0);
+        }
+    }
 }
