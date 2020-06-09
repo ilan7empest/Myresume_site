@@ -18,3 +18,10 @@
         opacity: 1;
     }
 }
+
+//rtl global 
+[dir="rtl"] {
+    .profile-img{
+        transform: scaleX(-1);
+    }
+}
