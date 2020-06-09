@@ -12,7 +12,7 @@
         header{
             box-shadow: 0px 3px 6px rgba(0,0,0,.3);
             .logo{
-                font-size: 1.2rem;
+                font-size: 1.4rem;
                 transition: font-size .5s ease-in-out;
             }
         }
@@ -40,13 +40,13 @@ header{
         font-size: 1.4rem;
         align-self: stretch;
         align-items: center;
-        flex: 0 0 auto;
+        flex: 0 0 120px;
         position: relative;
         width: auto;
         z-index: 1;
         transition: font-size .5s ease-in-out;
         @include media-breakpoint-up(md){
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
     }
     .mid-area{
