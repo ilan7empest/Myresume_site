@@ -34,7 +34,7 @@ header{
         transition: box-shadow .5s ease-in-out;
     }
     .logo{
-        cursor: pointer;
+        cursor: default;
         @extend %oswald;
         color: var(--color-primary-dark);
         font-size: 1.4rem;

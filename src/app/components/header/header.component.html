@@ -1,14 +1,13 @@
 <header class="header-tpl">
   <div class="d-flex flex-wrap align-items-center">
     <div class="container">
-      <div class="header-wrapper d-flex align-items-stretch py-2">
-        <button class="logo reset text-left d-none d-md-block" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+      <div class="header-wrapper d-flex align-items-stretch py-3">
+        <button class="logo reset text-left d-none d-md-block">
           <div class="profile-img">
-            <img src="assets/imgs/backgrounds/profile.png" />
+            <img src="assets/imgs/backgrounds/profile.png" alt="{{'about.name' | translate}}" title="{{'about.name' | translate}}" />
           </div>
         </button>
-        <button class="logo reset text-left d-block d-md-none" routerLink="" routerLinkActive="active-link"
-          [routerLinkActiveOptions]="{exact: true}">
+        <button class="logo reset text-left d-block d-md-none">
           My Resume
         </button>
         <section class="mid-area justify-content-start d-flex align-items-center">

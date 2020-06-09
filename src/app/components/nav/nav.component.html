@@ -6,19 +6,17 @@
     [ngClass]="{ 'open': tsNav }">
     <ul class="d-flex main-nav">
         <li class="about">
-            <button type="text" class="" routerLink="home" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+            <button type="text" class="" (click)="onClick('about')">
                 <label>{{'nav.about' | translate}}</label>
             </button>
         </li>
         <li class="experience">
-            <button type="text" class="" routerLink="home#experience" routerLinkActive="active-link"
-                [routerLinkActiveOptions]="{exact: true}">
+            <button type="text" class="" (click)="onClick('experience')">
                 <label>{{'nav.experience' | translate}}</label>
             </button>
         </li>
         <li class="skills">
-            <button type="text" class="" routerLink="home#skills" routerLinkActive="active-link"
-                [routerLinkActiveOptions]="{exact: true}">
+            <button type="text" class="" (click)="onClick('skills')">
                 <label>{{'nav.skills' | translate}}</label>
             </button>
         </li>
@@ -29,8 +27,7 @@
             </button>
         </li> -->
         <li class="contact">
-            <button type="text" class="" routerLink="home#contact" routerLinkActive="active-link"
-                [routerLinkActiveOptions]="{exact: true}">
+            <button type="text" class="" (click)="onClick('contact')">
                 <label>{{'nav.contact' | translate}}</label>
             </button>
         </li>
