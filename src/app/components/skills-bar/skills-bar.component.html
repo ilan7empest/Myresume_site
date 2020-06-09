@@ -1,46 +1,11 @@
 <div class="skills-bar">
     <ul class="skill-list d-flex flex-column f--color-contrast-lower">
-        <li class="d-flex align-items-center animated" animateOnScroll animationName="fadeIn">
-            <span class="name">HTML</span>
+        <li class="d-flex align-items-center animated" animateOnScroll animationName="fadeIn" *ngFor="let skill of skills">
+            <span class="name uppercase">{{skill.name}}</span>
             <div class="w-100">
-                <div class="bar-fill html"></div>
+                <div class="bar-fill {{skill.class}}"></div>
             </div>
-            <span class="percentage">92%</span>
-        </li>
-        <li class="d-flex align-items-center animated" animateOnScroll animationName="fadeIn">
-            <span class="name">UX/UI</span>
-            <div class="w-100">
-                <div class="bar-fill ux"></div>
-            </div>
-            <span class="percentage">90%</span>
-        </li>
-        <li class="d-flex align-items-center animated" animateOnScroll animationName="fadeIn">
-            <span class="name">CSS 2/3</span>
-            <div class="w-100">
-                <div class="bar-fill css"></div>
-            </div>
-            <span class="percentage">86%</span>
-        </li>
-        <li class="d-flex align-items-center animated" animateOnScroll animationName="fadeIn">
-            <span class="name">SCSS</span>
-            <div class="w-100">
-                <div class="bar-fill scss"></div>
-            </div>
-            <span class="percentage">80%</span>
-        </li>
-        <li class="d-flex align-items-center animated" animateOnScroll animationName="fadeIn">
-            <span class="name">LESS</span>
-            <div class="w-100">
-                <div class="bar-fill less"></div>
-            </div>
-            <span class="percentage">65%</span>
-        </li>
-        <li class="d-flex align-items-center animated" animateOnScroll animationName="fadeIn">
-            <span class="name">Javescript</span>
-            <div class="w-100">
-                <div class="bar-fill js"></div>
-            </div>
-            <span class="percentage">40%</span>
+            <span class="percentage">{{skill.percentage}}%</span>
         </li>
     </ul>
 </div>

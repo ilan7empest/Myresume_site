@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Skill } from '../../shared/skill';
+import { SkillService } from '../../services/skill.service';
 
 @Component({
   selector: 'app-skills-bar',
@@ -6,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills-bar.component.scss']
 })
 export class SkillsBarComponent implements OnInit {
-  // name: any;
-  // width: any;
+  skills: Skill[];
 
-  constructor() { }
+  constructor(
+    private skillService: SkillService
+  ) { }
 
   ngOnInit(): void {
-    // this.name = 'HTML';
-    // this.width = 95;
+    this.skills = this.skillService.getSkills();
   }
 }
