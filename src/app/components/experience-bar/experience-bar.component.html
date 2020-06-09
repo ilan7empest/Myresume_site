@@ -1,38 +1,12 @@
 <ul class="experience-list d-flex flex-column justify-content-start">
-    <li class="animated" animateOnScroll animationName="fadeIn">
-        <time datetime="2020" class="date f--color-success-darker d-block">2020</time>
-        <label>Matrix - "Bank Leumi"</label>
-        <h6>UX/UI Team Leader</h6>
-        <p>
-            <span>Building and managing a team of 6 programmers.</span>
-            <span>In charge of an Angular development team (Management).</span>
-            <span>Rebuilding the secure site using responsive design.</span>
-            <span>Oversee development from concept to integration.</span>
-            <span>Responsible for the entire UI/UX Development and Solutions.</span>
-        </p>
-    </li>
-    <li class="animated" animateOnScroll animationName="fadeIn">
-        <time datetime="2013-2014" class="date f--color-success-darker d-block">2013-2014</time>
-        <label>Matrix - "Bank Leumi"</label>
-        <h6>Web Developer</h6>
-        <p>
-            <span>Building and Maintaining E-banking sites on various platforms (.NET &
-            AngularJS).</span>
-            <span>Integrating new features.</span>
-            <span>Web Performance Optimization.</span>
-        </p>
-    </li>
-    <li class="animated" animateOnScroll animationName="fadeIn">
-        <time datetime="2004-2013" class="date f--color-success-darker d-block">2004-2013</time>
-        <label>CoolVision Ltd.</label>
-        <h6>Web Developer</h6>
-        <p>
-            <span>Managed the development and execution of multi level web-sites in English that have large international recognition.</span>
-            <span>generating million of dollars in revenue.</span>
-            <span>Oversee bi-monthly marketing campaigns in English for various affiliate sites.</span>
-            <span>Building and integrating marketing promotional tools in various formats.</span>
-            <span>Act as lead liaison between creative and technical team to ensure timelines are met.</span>
-            <span>Day to day work in technical programs such as ASP and .net environment.</span>
+    <li class="animated" animateOnScroll animationName="fadeIn" *ngFor="let experience of experienceList">
+        <span class="date f--color-success-darker d-block normal">{{experience.date}}</span>
+        <label>{{experience.company}}</label>
+        <h6>{{experience.jobTitle}}</h6>
+        <p class="mt-2">
+            <span *ngFor="let description of experience.description">
+                {{description.description}}
+            </span>
         </p>
     </li>
 </ul>

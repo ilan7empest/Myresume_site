@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Experience } from '../../shared/experience';
+import { ExperienceService } from '../../services/experience.service';
 
 @Component({
   selector: 'app-experience-bar',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceBarComponent implements OnInit {
 
-  constructor() { }
+  experienceList: Experience[];
+
+  constructor(
+    private experienceService: ExperienceService
+  ) { }
+
+  
 
   ngOnInit(): void {
+    this.experienceList = this.experienceService.getExperienceList();
   }
 
 }
