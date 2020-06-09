@@ -49,6 +49,21 @@ header{
             font-size: 1.6rem;
         }
     }
+    .profile-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid var(--color-contrast-low);
+        background-color: var(--color-contrast-lower);
+        border-radius: 50%;
+        overflow: hidden;
+        height: 120px;
+        width: 120px;
+        padding: 7px 15px 0 22px;
+        img{
+            width: 100%;
+        }
+    }
     .mid-area{
         position: relative;
         z-index: 2;

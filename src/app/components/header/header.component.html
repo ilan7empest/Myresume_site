@@ -2,8 +2,10 @@
   <div class="d-flex flex-wrap align-items-center">
     <div class="container">
       <div class="header-wrapper d-flex align-items-stretch py-2">
-        <button class="logo reset text-left" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
-          <span>My Resume</span>
+        <button class="logo reset text-left d-none d-md-block" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+          <div class="profile-img">
+            <img src="/assets/imgs/backgrounds/profile.png" />
+          </div>
         </button>
         <section class="mid-area justify-content-start d-flex align-items-center">
           <ts-nav></ts-nav>
