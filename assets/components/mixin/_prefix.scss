@@ -37,28 +37,28 @@
     &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         color: $color;
         font-size: $font-size + px;
-        @extend %uppercase;
+        text-transform: uppercase;
         @include opacity($opacity);
         transition: .3s all ease-in-out;
       }
       &::-moz-placeholder { /* Firefox 19+ */
         color: $color;
         font-size: $font-size + px;
-        @extend %uppercase;
+        text-transform: uppercase;
         @include opacity($opacity);
         transition: .3s all ease-in-out;
       }
       &:-ms-input-placeholder { /* IE 10+ */
         color: $color;
         font-size: $font-size + px;
-        @extend %uppercase;
+        text-transform: uppercase;
         @include opacity($opacity);
         transition: .3s all ease-in-out;
       }
       &:-moz-placeholder { /* Firefox 18- */
         color: $color;
         font-size: $font-size + px;
-        @extend %uppercase;
+        text-transform: uppercase;
         @include opacity($opacity);
         transition: .3s all ease-in-out;
       }
