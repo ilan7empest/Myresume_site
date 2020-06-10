@@ -3,7 +3,7 @@
         <li class="d-flex align-items-center animated" animateOnScroll animationName="fadeIn" *ngFor="let skill of skills">
             <span class="name uppercase">{{skill.name}}</span>
             <div class="w-100">
-                <div class="bar-fill {{skill.class}}"></div>
+                <div class="bar-fill {{skill.class}}" [style.width.%]="skill.percentage"></div>
             </div>
             <span class="percentage">{{skill.percentage}}%</span>
         </li>

@@ -1,13 +1,14 @@
 @import "bundle";
 .skills-tpl{
-    .skills-bg{
+    &.skills-bg{
         // background: url('/assets/imgs/backgrounds/intro-bg.jpg') center top no-repeat transparent;
         // background-size: cover;
         background: rgb(94,94,94);
         background: linear-gradient(90deg, rgba(94,94,94,1) 0%, rgba(171,171,171,1) 100%, rgba(3,73,106,1) 100%);
         min-height: 300px;  
-        padding: 50px 0;
-        @include media-breakpoint-up(md){
+        padding: 20px 0;
+        @include media-breakpoint-up(md){  
+            padding: 50px 0;
             min-height: 650px;
             background-attachment: fixed;
         }

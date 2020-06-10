@@ -30,5 +30,16 @@ export const SKILLS: Skill[] = [
         name: 'js',
         class: 'js',
         percentage: 40
+    },
+    {
+        name: 'Angular',
+        class: 'angular',
+        percentage: 20
+    }
+    ,
+    {
+        name: 'git',
+        class: 'angular',
+        percentage: 30
     }
 ]

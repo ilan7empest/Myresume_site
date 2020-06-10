@@ -11,30 +11,10 @@
     .skill-list{
         li{
             transform: translateX(-70px);
-            transition: transform .4s ease-in;
             margin-bottom: 1rem;
             &.fadeIn{
                 transform: translateX(0);
-                .bar-fill{
-                    &.html{
-                        width: 92%;
-                    }
-                    &.ux{
-                        width: 90%;
-                    }
-                    &.css{
-                        width: 86%;
-                    }
-                    &.scss{
-                        width: 80%;
-                    }
-                    &.less{
-                        width: 65%;
-                    }
-                    &.js{
-                        width: 40%;
-                    }
-                }
+                transition: transform .4s ease-in;
             }
         }
         .name{

@@ -6,17 +6,17 @@
     [ngClass]="{ 'open': tsNav }">
     <ul class="d-flex main-nav">
         <li class="about">
-            <button type="text" class="" (click)="onClick('about')">
+            <button type="text" class="" (click)="onClick('about')" id="about-nav">
                 <label>{{'nav.about' | translate}}</label>
             </button>
         </li>
         <li class="experience">
-            <button type="text" class="" (click)="onClick('experience')">
+            <button type="text" class="" (click)="onClick('experience')" id="experience-nav">
                 <label>{{'nav.experience' | translate}}</label>
             </button>
         </li>
         <li class="skills">
-            <button type="text" class="" (click)="onClick('skills')">
+            <button type="text" class="" (click)="onClick('skills')" #skills>
                 <label>{{'nav.skills' | translate}}</label>
             </button>
         </li>

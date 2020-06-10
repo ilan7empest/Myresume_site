@@ -18,6 +18,13 @@
         opacity: 1;
     }
 }
+.scroll-offset{
+    height: $header-height-mobile;
+    width: 100%;
+    @include media-breakpoint-up(md){
+        height: $header-height-scrolled;
+    }
+}
 
 //rtl global 
 [dir="rtl"] {

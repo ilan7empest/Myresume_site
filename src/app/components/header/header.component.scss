@@ -11,9 +11,23 @@
         }
         header{
             box-shadow: 0px 3px 6px rgba(0,0,0,.3);
+            transition: box-shadow .5s ease-in-out;
+            .header-wrapper{
+                @include media-breakpoint-up(md){
+                    padding-top: .6rem;
+                    transition: padding-top .5s ease-in-out;
+                }
+            }
             .logo{
+                flex: 0 0 100px;
                 font-size: 1.4rem;
-                transition: font-size .5s ease-in-out;
+                transition: all .5s ease-in-out;
+            }
+            .profile-img{
+                height: 100px;
+                width: 100px;
+                transition: all .5s ease-in-out;
+                
             }
         }
     }
@@ -26,12 +40,17 @@ header{
     left: 0;
     width: 100%;
     z-index: 100;
+    transition: box-shadow .5s ease-in-out;
     background-color: var(--color-bg);
     .header-wrapper{
+        padding-top: .5rem;
         width: 100%;
         position: relative;
         z-index: 1;
-        transition: box-shadow .5s ease-in-out;
+        @include media-breakpoint-up(md){
+            padding-top: 1rem;
+            transition: padding-top .5s ease-in-out;
+        }
     }
     .logo{
         cursor: default;
@@ -44,14 +63,14 @@ header{
         position: relative;
         width: auto;
         z-index: 1;
-        transition: font-size .5s ease-in-out;
+        transition: all .5s ease-in-out;
         @include media-breakpoint-up(md){
             font-size: 1.6rem;
         }
     }
     .profile-img{
         position: absolute;
-        top: 0;
+        top: -10px;
         left: 0;
         border: 1px solid var(--color-contrast-low);
         background-color: var(--color-contrast-lower);
@@ -59,7 +78,8 @@ header{
         overflow: hidden;
         height: 120px;
         width: 120px;
-        padding: 7px 15px 0 22px;
+        padding: 0;
+        transition: all .5s ease-in-out;
         img{
             width: 100%;
         }

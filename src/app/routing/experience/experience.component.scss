@@ -1,14 +1,14 @@
 @import "bundle";
 .experience-tpl{
     direction: ltr !important;
-    padding: 50px 0;
-    .experience-bg{
+    &.experience-bg{
         // background: url('/assets/imgs/backgrounds/me.jpg') right bottom no-repeat transparent;
         // background-size: cover;
         min-height: 300px;
+        padding: 20px 0;
         @include media-breakpoint-up(md){
+            padding: 50px 0;
             min-height: 850px;
-            background-attachment: fixed;
         }
     }
 }

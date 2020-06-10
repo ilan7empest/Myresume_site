@@ -1,8 +1,9 @@
 @import "bundle";
 nav{
     opacity: 0;
+    transform: translate(100%, 0);
     align-self: stretch;
-    transition: opacity .3s linear;
+    transition: all .3s linear;
     position: fixed;
     top: $header-height-mobile;
     left: 0;
@@ -13,6 +14,7 @@ nav{
     font-size: 1.275rem;
     @include media-breakpoint-up(md){
         opacity: 1;
+        transform: translate(0, 0);
         height: 100%;
         position: relative;
         top: 0;
@@ -49,14 +51,19 @@ nav{
                 text-decoration: none;
                 width: 100%;
                 min-width: 100%; 
-                &.active-link{
-                    &:before{
-                        
-                    }
-                }
-                &:hover{
-                    &:before{
-                        
+                &:hover,
+                &.active{
+                    label{
+                        &:after{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        bottom: -6px;
+                        left: 0;
+                        width: 100%;
+                        height: 3px;
+                        background-color: var(--color-primary);
+                        }
                     }
                 }
                 label{
@@ -92,13 +99,7 @@ nav{
         display: flex;
         justify-content: center;
         align-items: center;
-        // background-color: var(--color-primary-dark);
         background-color: transparent;
-        // border-radius: 30px;
-        // padding: 0 .6rem;
-        // height: 40px;
-        // width: 40px;
-        // min-width: 40px;
         padding: 0;
         min-width: 30px;
         position: relative;
