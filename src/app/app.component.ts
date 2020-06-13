@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { TemplateSelectorService } from './services/template-selector.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
   
 export class AppComponent implements OnInit {
   title = 'my-resume';
-  
+
+  ispro: boolean;
+
+  constructor(private data: TemplateSelectorService) {}
+
   storedTheme: string = localStorage.getItem('theme-color');
   storedDirection: string = localStorage.getItem('dir');
   
@@ -25,8 +29,15 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.data.isPro.subscribe(ispro => this.ispro = ispro);
     this.storedTheme != null ? document.body.setAttribute('data-theme', this.storedTheme) : document.body.setAttribute('data-theme', 'light'); //set theme
     this.storedDirection == null ? document.querySelector('html').setAttribute('dir', "ltr") : document.querySelector('html').setAttribute('dir', this.storedDirection); //set language 
   }
+
+  ngOnDestroy() {
+    this.data.isPro.subscribe(ispro => this.ispro = ispro).unsubscribe();
+  }
+
+  
 
 }

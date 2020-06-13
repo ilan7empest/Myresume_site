@@ -1,5 +1,8 @@
 @import "bundle";
-nav{
+:host#navPro{
+    flex: 0 1 auto;
+}
+.nav{
     opacity: 0;
     transform: translate(100%, 0);
     align-self: stretch;
@@ -34,11 +37,12 @@ nav{
         }
         li{
             text-align: center;
-            width: auto;
+            width: 100%;
             height: 100%;
             position: relative;
             padding: 0 0 10px;
             @include media-breakpoint-up(md){
+                width: auto;
                 padding: 0 15px;
             }
             button{
@@ -76,6 +80,145 @@ nav{
                     @include media-breakpoint-up(md){
                         color: var(--color-contrast-high);
                     }
+                }
+            }
+        }
+    }
+    .login-btn{
+        @include media-breakpoint-down(sm){
+            color: var(--color-white);
+        }
+    }
+    &.open{
+        @include media-breakpoint-down(md){
+            opacity: 1;
+            transform: translate(0, 0);
+            transition: all .3s linear;
+        } 
+    }
+}
+
+.toggle-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 0;
+    min-width: 30px;
+    position: relative;
+    z-index: 2;
+    i{
+        position: relative;
+        width: 100%;
+        height: .2rem;
+        background: var(--color-contrast-high);
+        transition: 0.5s;
+        border-radius: 2.5rem;
+        &:before, &:after {
+            display: block;
+            content: "";
+            height: .2rem;
+            width: 100%;
+            background: var(--color-contrast-high);
+            position: absolute;
+            z-index: -1;
+            transition :all .3s linear;
+            border-radius: 1rem;
+        }
+        &:before { top: .5rem; }
+        &:after { top: -.5rem;}
+    }
+    &.active{ 
+        i{
+            background: transparent;
+            &:before { 
+                top: 0 !important;
+                transform: rotate(-45deg);
+            }
+            &:after { 
+                top: 0 !important;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+.nav-pro{
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    font-size: 1.275rem;
+    @include media-breakpoint-up(md){
+        position: relative;
+        top: 0;
+        font-size: inherit;
+    }
+    .main-nav{
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        align-items: baseline;
+        @include media-breakpoint-up(md){
+            flex-direction: row;
+        }
+        li{
+            text-align: center;
+            width: auto;
+            height: 100%;
+            position: relative;
+            padding: 0 0 10px;
+            button{
+                background: none;
+                font-size: inherit;
+                border-radius: 0;
+                cursor: pointer;
+                padding: 0;
+                height: 100%;
+                text-decoration: none;
+                width: 100%;
+                min-width: 100%; 
+                position: relative;
+                &:hover{
+                    @include media-breakpoint-up(md){
+                        label{
+                            opacity: 1;
+                            transform: translate(0, 0);
+                            transition: all .3s linear;
+                        }
+                    }
+                    i{
+                        color: var(--color-primary-dark);
+                    }
+                }
+                &.active{
+                    i{
+                        color: var(--color-primary-dark);
+                    }
+                }
+                i{
+                    display: block;
+                    color: var(--color-contrast-high);
+                    font-size: 2rem;
+                    font-weight: 100;
+                    &:not(last-child){
+                        margin-bottom: 1.5rem;
+                    }
+                }
+                label{
+                    font-size: .875rem;
+                    opacity: 0;
+                    position: absolute;
+                    top: 5px;
+                    left: 58px;
+                    padding: .2rem .5rem;
+                    background-color: var(--color-primary-dark);
+                    border-radius: 0 5px 5px 0;
+                    text-transform: capitalize;
+                    color: var(--color-white);
+                    transform: translate(0, -10px);
+                    cursor: pointer;    
+                    margin: 0;
+                    transition: all .3s linear;
                 }
             }
         }

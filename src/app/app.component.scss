@@ -1,4 +1,20 @@
 @import "bundle";
+:host-context([data-theme="dark"]){
+    .app-cv{
+        background-color: var(--color-black);
+        .content{
+            &:before{
+                top: 0;
+                background-image: linear-gradient(to bottom, var(--color-black) 35%, var(--color-black) 23%, transparent 100%);
+            }
+            &:after{
+                bottom: 0;
+                background-image: linear-gradient(to top, var(--color-black) 35%, var(--color-black) 23%, transparent 100%)
+                
+            }
+        }
+    }
+}
 .app-wrapper{
     height: 100%;
     main{
@@ -12,6 +28,101 @@
         padding: 0 0 $app-layout-padding;
         & > section{
             padding: 20px 0;
+        }
+    }
+}
+.app-cv{
+    height: 100%;
+    padding: 0;
+    background-color: var(--color-bg);
+    @include media-breakpoint-up(md){
+        padding: 1% 0;
+    }
+    .container{
+        padding: 0;
+    }
+    .left-side{
+        @include media-breakpoint-down(sm){
+            max-width: 50px;
+        }
+    }
+    .menu{
+        border-right: 1px solid var(--color-contrast-low);
+        flex: 0 0 50px;
+        max-width: 50px;
+        @include media-breakpoint-up(md){
+            border: 0;
+            flex: 0 0 80px;
+            max-width: 80px;
+        }
+    }
+    main{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .content{
+        width: 100%;
+        padding: 0 5px 0 0;
+        overflow: hidden;
+        position: relative;
+        @include media-breakpoint-up(md){
+            &:before,
+            &:after
+            {
+                content: '';
+                left: 0;
+                right: 0;
+                height: 30px;
+                position: absolute;
+                display: block;
+                z-index: 3;
+            }
+            &:before{
+                top: 0;
+                background-image: linear-gradient(to bottom, var(--color-white) 35%, var(--color-white) 23%, transparent 100%);
+                
+            }
+            &:after{
+                bottom: 0;
+                background-image: linear-gradient(to top, var(--color-white) 35%, var(--color-white) 23%, transparent 100%)
+                
+            }
+        }
+    }
+    .profile{
+        position: relative;
+        flex: 0 0 calc(100% - 80px);
+        min-width: calc(100% - 80px);
+        // box-shadow: 0 32px 84px 0 rgba(0,0,0,0.5);
+        &-img{
+            background: url('/assets/imgs/backgrounds/profile_full.jpg') center top no-repeat transparent;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .profile-info{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        min-height: 30%;
+        width: 100%;
+    }
+    .download-btn{
+        i{
+            color: var(--color-white);
+            font-size: 2rem;
+        }
+        &:hover{
+            i{
+                color: var(--color-bg);
+            }
         }
     }
 }

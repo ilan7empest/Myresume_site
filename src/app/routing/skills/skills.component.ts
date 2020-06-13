@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TemplateSelectorService } from '../../services/template-selector.service';
 
 @Component({
   selector: 'app-skills',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  constructor() { }
+  ispro: boolean;
 
-  ngOnInit(): void {  
-    
+  constructor(private data: TemplateSelectorService) { }
+
+  ngOnInit() {
+    this.data.isPro.subscribe(ispro => this.ispro = ispro);
   }
 
 }

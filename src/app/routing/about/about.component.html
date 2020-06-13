@@ -1,9 +1,9 @@
-<section class="about-tpl section-full intro-bg">
-    <div class="scroll-offset"></div>
-    <div class="text-center f--color-white d-flex align-items-center"> 
+<section class="about-tpl section-full" [ngClass]="{'intro-bg':!ispro, 'intro-bg-pro section-pro pro':ispro}">
+    <div class="scroll-offset" *ngIf="!ispro"></div>
+    <div class="text-center d-flex align-items-center" [ngClass]="{'f--color-white':!ispro, 'f--color-contrast-higher':ispro}"> 
         <div class="container animated" animateOnScroll animationName="fadeIn">
             <div class="row">
-                <div class="col-12 col-md-6 text-left uppercase">
+                <div class="col-12 text-left uppercase" *ngIf="!ispro">
                     <h2>
                         <span class="mr-2 f--color-primary">{{'about.hi' | translate}},</span><span>{{'about.im' | translate}}</span>
                     </h2>
@@ -15,8 +15,12 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    
+                <div class="col-12" *ngIf="ispro">
+                    <h2 class="header">About</h2>
+                    <p class="text-left">Client-Side Web Developer with over 15 years of experience
+                        with Wide knowledge in building and developing websites and marketing tools.<br>
+                        Experienced in team management, maintaining work flow, schedules and tasks.
+                    </p>
                 </div>
             </div>
         </div>

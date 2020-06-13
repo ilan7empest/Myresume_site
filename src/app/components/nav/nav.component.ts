@@ -1,4 +1,5 @@
-import { Component, Injectable, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, Injectable } from '@angular/core';
+import { TemplateSelectorService } from '../../services/template-selector.service';
 
 @Component({
   selector: 'ts-nav',
@@ -7,10 +8,16 @@ import { Component, Injectable, ViewChild, ElementRef } from '@angular/core';
 })
 
 @Injectable()
-export class NavComponent {
+export class NavComponent implements OnInit {
   tsNav: boolean;
 
-  constructor() { }
+  ispro: boolean;
+
+  constructor(private data: TemplateSelectorService) { }
+
+  ngOnInit() {
+    this.data.isPro.subscribe(ispro => this.ispro = ispro);
+  }
 
   onClick(id: any): void {
     const el: HTMLElement | null = document.getElementById(id);

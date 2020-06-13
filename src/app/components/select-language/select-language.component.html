@@ -1,7 +1,9 @@
-<div class="select-language-tpl d-flex ml-2">
-    <button class="reset select-language-btn pr-2 mr-2 f--color-contrast-high border-right" #langSelect type="button"
+<div class="select-language-tpl d-flex" [ngClass]="{'ml-2': !ispro, 'pro flex-column': ispro}">
+    <button class="reset select-language-btn f--color-contrast-high" #langSelect type="button"
         *ngFor="let lang of translate.getLangs()" [value]="lang"
         [attr.selected]="lang === translate.currentLang ? '' : null"
-        [ngClass]="lang === translate.currentLang ? 'selected' : null"
-        (click)="switchLang(langSelect.value);setDirection(lang)">{{lang | titlecase}}</button>
+        [ngClass]="{'selected' : lang === translate.currentLang, 'border-right pr-2 mr-2' : !ispro, 'py-2': ispro}"
+        
+        (click)="switchLang(langSelect.value);setDirection(lang)">{{lang | titlecase}}
+    </button>
 </div>

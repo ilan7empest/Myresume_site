@@ -1,10 +1,23 @@
 // Switch themes style
+:host#selectLanPro{
+    width: 100%;
+}
 .select-language-tpl{
     .select-language-btn{
         font-size: .875rem;
         &.selected{
             color: var(--color-primary);
             font-weight: bold;
+        }
+    }
+    &.pro{
+       .select-language-btn{
+            width: 100%;
+            font-size: 1rem;
+            &.selected{
+                color: var(--color-white);
+                background-color:var(--color-primary-dark);
+            }
         }
     }
 }
