@@ -3,17 +3,12 @@
     <div class="text-center d-flex align-items-center" [ngClass]="{'f--color-white':!ispro, 'f--color-contrast-higher':ispro}"> 
         <div class="container animated" animateOnScroll animationName="fadeIn">
             <div class="row">
-                <div class="col-12 col-md-6 text-left uppercase" *ngIf="!ispro">
+                <div class="col-12 col-md-6 mb-3 text-left uppercase" *ngIf="!ispro">
                     <h2>
                         <span class="mr-2 f--color-primary">{{'about.hi' | translate}},</span><span>{{'about.im' | translate}}</span>
                     </h2>
                     <h1 class="title mb-2">{{'about.name' | translate}}</h1>
                     <h4 class="d-block f--color-primary">{{'about.title' | translate}}</h4>
-                    <div class="mt-5">
-                        <a href="https://drive.google.com/file/d/14bjnWJzF2oUp1aB8xAnHUxfpsTv7cW1A/view?usp=sharing" target="_blank" class="ts-btn-primary px-5 py-2 d-inline-flex" role="button">
-                            {{'about.button' | translate}}
-                        </a>
-                    </div>
                 </div>
                 <div class="col-12 text-left" [ngClass]="{'col-md-6': !ispro}">
                     <div class="d-flex flex-column">
@@ -34,6 +29,16 @@
                             </p>
                         </article> -->
                         </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="my-3 text-left">
+                        <a href="https://drive.google.com/file/d/14bjnWJzF2oUp1aB8xAnHUxfpsTv7cW1A/view?usp=sharing" target="_blank"
+                            class="ts-btn-primary px-5 py-2 d-inline-flex" role="button">
+                            {{'about.button' | translate}}
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
