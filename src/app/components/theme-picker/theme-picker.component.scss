@@ -1,3 +1,4 @@
+@import "bundle";
 // Switch themes style
 :host#themePickerPro {
     flex: 0 0 50px;
@@ -101,6 +102,13 @@
         }
     }
     &.pro{
+        &.open {
+             @include media-breakpoint-up(md){
+                .swatch-theme {
+                    max-height: 200px;
+                }
+            }
+        }
         .toggle-menu-btn{
             margin: 0;
             padding: 0;
@@ -108,18 +116,28 @@
             width: 100%;
             min-height: 50px;
             border-radius: 0;
-        &:before{
-                height: 100%;
-                width: 50%;
-                background-color: var(--color-primary);
-                transform: translateX(0);
-        }
+            &:before{
+                    height: 100%;
+                    width: 50%;
+                    background-color: var(--color-primary);
+                    transform: translateX(0);
+            }
         }
         .swatch-theme{
-            border-radius: 0;
-            margin-top: 0;
-            top: 0;
-            left: 100%;
+                top: 0;
+                left: 100%;
+                margin-top: 0;
+                margin-left: 2px;
+            @include media-breakpoint-up(md){
+                display: block ;
+                max-height: 0;
+                position: relative;
+                border-radius: 0;
+                margin-top: 0;
+                left: 0;
+                min-width: 100%;
+                transition: max-height .2s ease-in;
+            }   
         }
     }
 }

@@ -18,6 +18,10 @@
                 color: var(--color-white);
                 background-color:var(--color-primary-dark);
             }
+            &:hover{
+                color: var(--color-white);
+                background-color:var(--color-primary);
+            }
         }
     }
 }

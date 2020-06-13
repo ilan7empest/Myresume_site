@@ -1,4 +1,4 @@
-<section class="contact-tpl section-full contact-bg" [ngClass]="{'bg--color-contrast-lower' : ispro}">
+<section class="contact-tpl section-full" [ngClass]="{'contact-bg' : !ispro, 'section-pro pro' : ispro}">
     <div class="scroll-offset" *ngIf="!ispro"></div>
     <div class="text-center f--color-contrast-high d-flex align-items-center">
         <div class="container">

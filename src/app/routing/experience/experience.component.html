@@ -1,4 +1,4 @@
-<section class="experience-tpl section-full experience-bg" [ngClass]="{'bg--color-contrast-lower' : ispro}">
+<section class="experience-tpl section-full" [ngClass]="{'experience-bg' : !ispro, 'section-pro pro' : ispro}">
     <div class="scroll-offset" *ngIf="!ispro"></div>
     <div class="text-center f--color-contrast-higher d-flex align-items-center">
         <div class="container animated" animateOnScroll animationName="fadeIn">
