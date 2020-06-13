@@ -41,7 +41,7 @@
                 <main id="main-pro">
                     <div class="content my-0 my-md-3">
                         <ng-scrollbar track="all" pointerEventsMethod="scrollbar">
-                            <router-outlet></router-outlet>
+                            <router-outlet (activate)="onActivate($event)"></router-outlet>
                         </ng-scrollbar>
                     </div>
                 </main>

@@ -21,7 +21,6 @@ import { HomeComponent } from './routing/home/home.component';
 import { SkillsComponent } from './routing/skills/skills.component';
 import { ExperienceComponent } from './routing/experience/experience.component';
 import { ContactComponent } from './routing/contact/contact.component';
-import { GalleryComponent } from './routing/gallery/gallery.component';
 import { AboutComponent } from './routing/about/about.component';
 import { SkillsBarComponent } from './components/skills-bar/skills-bar.component';
 import { ExperienceBarComponent } from './components/experience-bar/experience-bar.component';
@@ -40,7 +39,6 @@ import { TemplateSelectorComponent } from './components/template-selector/templa
     SkillsComponent,
     ExperienceComponent,
     ContactComponent,
-    GalleryComponent,
     AboutComponent,
     SkillsBarComponent,
     ExperienceBarComponent,

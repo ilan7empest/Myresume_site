@@ -19,7 +19,7 @@ export class NavComponent implements OnInit {
     this.data.isPro.subscribe(ispro => this.ispro = ispro);
   }
 
-  onClick(id: any): void {
+  elScroll(id: any): void {
     const el: HTMLElement | null = document.getElementById(id);
     if (el) {
       setTimeout(() =>

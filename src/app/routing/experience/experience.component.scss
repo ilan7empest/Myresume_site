@@ -5,7 +5,7 @@
         // background: url('/assets/imgs/backgrounds/me.jpg') right bottom no-repeat transparent;
         // background-size: cover;
         min-height: 300px;
-        padding: 15px;
+        padding: 15px 0;
         @include media-breakpoint-up(md){
             min-height: 850px;
         }

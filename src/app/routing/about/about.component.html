@@ -3,7 +3,7 @@
     <div class="text-center d-flex align-items-center" [ngClass]="{'f--color-white':!ispro, 'f--color-contrast-higher':ispro}"> 
         <div class="container animated" animateOnScroll animationName="fadeIn">
             <div class="row">
-                <div class="col-12 text-left uppercase" *ngIf="!ispro">
+                <div class="col-12 col-md-6 text-left uppercase" *ngIf="!ispro">
                     <h2>
                         <span class="mr-2 f--color-primary">{{'about.hi' | translate}},</span><span>{{'about.im' | translate}}</span>
                     </h2>
@@ -15,12 +15,25 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12" *ngIf="ispro">
-                    <h2 class="header">About</h2>
-                    <p class="text-left">Client-Side Web Developer with over 15 years of experience
-                        with Wide knowledge in building and developing websites and marketing tools.<br>
-                        Experienced in team management, maintaining work flow, schedules and tasks.
-                    </p>
+                <div class="col-12 text-left" [ngClass]="{'col-md-6': !ispro}">
+                    <div class="d-flex flex-column">
+                        <article>
+                            <h3 class="header" *ngIf="ispro">About me</h3>
+                            <p>
+                                Web Developer with over 15 years of experience in building websites and marketing tools.
+                        
+                            </p>
+                            <p>
+                                Over the past 6 years i had the opportunity to manage a team and be a part of a complete site rebrand.
+                            </p>
+                        </article>
+                        <!-- <article *ngIf="ispro">
+                            <h3 class="header">Education</h3>
+                            <p>
+                        
+                            </p>
+                        </article> -->
+                        </div>
                 </div>
             </div>
         </div>

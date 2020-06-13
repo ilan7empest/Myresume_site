@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
     this.data.isPro.subscribe(ispro => this.ispro = ispro).unsubscribe();
   }
 
-
+ 
   // @HostListener("window:scroll", []) onWindowScroll() {
   //   const verticalOffset = window.pageYOffset
   //     || document.documentElement.scrollTop
