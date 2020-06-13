@@ -124,10 +124,11 @@
             }
         }
         .swatch-theme{
-                top: 0;
-                left: 100%;
-                margin-top: 0;
-                margin-left: 2px;
+            top: 0;
+            left: 100%;
+            margin-top: 0;
+            margin-left: 2px;
+            box-shadow: none;
             @include media-breakpoint-up(md){
                 display: block ;
                 max-height: 0;

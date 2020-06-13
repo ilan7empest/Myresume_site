@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { TemplateSelectorService } from './services/template-selector.service';
 
 @Component({
@@ -37,6 +37,15 @@ export class AppComponent implements OnInit {
   ngOnDestroy() {
     this.data.isPro.subscribe(ispro => this.ispro = ispro).unsubscribe();
   }
+
+
+  // @HostListener("window:scroll", []) onWindowScroll() {
+  //   const verticalOffset = window.pageYOffset
+  //     || document.documentElement.scrollTop
+  //     || document.body.scrollTop || 0;
+    
+    
+  // }
 
   
 
