@@ -1,4 +1,9 @@
+@import "bundle";
 // Switch themes style
+:host#themePickerPro {
+    flex: 0 0 50px;
+    width: 100%;
+}
 :host-context([data-theme="light"]){
     .theme-picker-tpl{
         label {
@@ -61,12 +66,14 @@
         top: 100%;
         left: 0;
         right: 0;
+        margin-top: 10px;
         background-color: var(--color-bg);
-        border-radius: 4px;
+        border-radius: 0 0 4px 4px;
         box-shadow: 2px 1px 6px -1px rgba(0, 0, 0, 0.2);
         width: 100%;
         min-width: 105px;
         overflow: hidden;
+        z-index: 5;
         li{
             padding: .25rem;
             cursor: pointer;
@@ -92,6 +99,45 @@
                 font-size: .675rem;
                 padding: 0 0 0 .5rem;
             }
+        }
+    }
+    &.pro{
+        &.open {
+             @include media-breakpoint-up(md){
+                .swatch-theme {
+                    max-height: 200px;
+                }
+            }
+        }
+        .toggle-menu-btn{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            min-height: 50px;
+            border-radius: 0;
+            &:before{
+                    height: 100%;
+                    width: 50%;
+                    background-color: var(--color-primary);
+                    transform: translateX(0);
+            }
+        }
+        .swatch-theme{
+                top: 0;
+                left: 100%;
+                margin-top: 0;
+                margin-left: 2px;
+            @include media-breakpoint-up(md){
+                display: block ;
+                max-height: 0;
+                position: relative;
+                border-radius: 0;
+                margin-top: 0;
+                left: 0;
+                min-width: 100%;
+                transition: max-height .2s ease-in;
+            }   
         }
     }
 }

@@ -1,10 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 
 // import third-party module
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+import { NgScrollbarModule } from 'ngx-scrollbar';
+
+import { TemplateSelectorService } from './services/template-selector.service';
+
 
 import { AppComponent } from './app.component';
 import { I18nModule } from './i18n/i18n.module';
@@ -22,6 +25,7 @@ import { GalleryComponent } from './routing/gallery/gallery.component';
 import { AboutComponent } from './routing/about/about.component';
 import { SkillsBarComponent } from './components/skills-bar/skills-bar.component';
 import { ExperienceBarComponent } from './components/experience-bar/experience-bar.component';
+import { TemplateSelectorComponent } from './components/template-selector/template-selector.component'
 
 @NgModule({
   declarations: [
@@ -39,15 +43,17 @@ import { ExperienceBarComponent } from './components/experience-bar/experience-b
     GalleryComponent,
     AboutComponent,
     SkillsBarComponent,
-    ExperienceBarComponent
+    ExperienceBarComponent,
+    TemplateSelectorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     I18nModule,
+    NgScrollbarModule,
     AnimateOnScrollModule.forRoot()
   ],
-  providers: [],
+  providers: [TemplateSelectorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

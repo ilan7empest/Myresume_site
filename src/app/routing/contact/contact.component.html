@@ -1,12 +1,10 @@
-<section class="contact-tpl section-full contact-bg">
-    <div class="scroll-offset"></div>
+<section class="contact-tpl section-full" [ngClass]="{'contact-bg' : !ispro, 'section-pro pro' : ispro}">
+    <div class="scroll-offset" *ngIf="!ispro"></div>
     <div class="text-center f--color-contrast-high d-flex align-items-center">
         <div class="container">
-            <h2 class="mb-5">
-                <span class="mr-2 f--color-primary-dark uppercase">contact me</span>
-            </h2>
+            <h2 class="header f--color-primary-dark">contact me</h2>
             <div class="row text-center">
-                <div class="col-12 col-md-4 mb-4 mb-md-0 animated" animateOnScroll animationName="fadeIn">
+                <div class="col-12 mb-4 animated" animateOnScroll animationName="fadeIn" [ngClass]="{'col-md-4 mb-md-0' : !ispro}">
                     <a href="tel:+972-523-764820">
                         <span class="icon">
                             <i class="material-icons-outlined">call</i>
@@ -14,7 +12,7 @@
                         <label class="uppercase">+972-523-764820</label>
                     </a>
                 </div>
-                <div class="col-12 col-md-4 mb-4 mb-md-0 animated" animateOnScroll animationName="fadeIn">
+                <div class="col-12 mb-4 animated" animateOnScroll animationName="fadeIn" [ngClass]="{'col-md-4 mb-md-0' : !ispro}">
                     <a href="https://mail.google.com/a/gmail.com/?view=cm&fs=1&to=ilank7@gmail.com" target="_blank">
                         <span class="icon">
                             <i class="material-icons-outlined">alternate_email</i>
@@ -22,7 +20,7 @@
                         <label class="uppercase">ilank7@gmail.com</label>
                     </a>
                 </div>
-                <div class="col-12 col-md-4 mb-4 mb-md-0 animated" animateOnScroll animationName="fadeIn">
+                <div class="col-12 mb-4 animated" animateOnScroll animationName="fadeIn" [ngClass]="{'col-md-4 mb-md-0' : !ispro}">
                     <span class="icon d-block">
                         <i class="material-icons-outlined">location_on</i>
                     </span>

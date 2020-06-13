@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TemplateSelectorService } from '../../services/template-selector.service';
 
 @Component({
   selector: 'app-experience',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
+  ispro: boolean;
 
-  constructor() { }
+  constructor(private data: TemplateSelectorService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.data.isPro.subscribe(ispro => this.ispro = ispro);
   }
 
 }

@@ -1,35 +1,46 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './routing/home/home.component'; 
-import { GalleryComponent } from './routing/gallery/gallery.component';
-
+import { HomeComponent } from './routing/home/home.component';
+import { AboutComponent } from './routing/about/about.component';
+import { ExperienceComponent } from './routing/experience/experience.component';
+import { SkillsComponent } from './routing/skills/skills.component';
+import { ContactComponent } from './routing/contact/contact.component';
 
 const routes: Routes = [
   {
-    path: 'Home',
+    path: 'home',
     component: HomeComponent
   },
   {
-    path: 'gallery',
-    component: GalleryComponent
+    path: 'about',
+    component: AboutComponent
+  },
+  {
+    path: 'experience',
+    component: ExperienceComponent
+  },
+  {
+    path: 'skills',
+    component: SkillsComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   },
   {
     path: '',
-    redirectTo: '/Home',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   {
     path: '**',
-    redirectTo: '/Home',
+    redirectTo: '/home',
     pathMatch: 'full'
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    anchorScrolling: 'enabled'
-  }
-  )],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

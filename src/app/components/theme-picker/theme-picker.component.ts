@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TemplateSelectorService } from '../../services/template-selector.service';
 
 @Component({
   selector: 'theme-picker',
@@ -6,14 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./theme-picker.component.scss']
 })
 
-export class ThemePickerComponent {
+export class ThemePickerComponent implements OnInit {
 
-  constructor(
-  ) { }
+  ispro: boolean;
+
+  constructor(private data: TemplateSelectorService) { }
 
   themeMenuOpen = false;
   toggleMain() {
     this.themeMenuOpen = !this.themeMenuOpen;
+  }
+
+  ngOnInit() {
+    this.data.isPro.subscribe(ispro => this.ispro = ispro);
   }
 
   toggleTheme(theme: any) {

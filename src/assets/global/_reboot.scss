@@ -1,5 +1,6 @@
 html {
   @include font-size-map($body-font-size);
+  background-color: var(--color-bg);
   height: 100%;
   -webkit-text-size-adjust: 100%; // 4
   -ms-text-size-adjust: 100%; // 4
@@ -42,12 +43,12 @@ dl {
 }
 
 a {
-  color: var(--color-primary-lighter);
+  color: var(--color-primary);
   background-color: transparent; // Remove the gray background on active links in IE 10.
   -webkit-text-decoration-skip: objects; // Remove gaps in links underline in iOS 8+ and Safari 8+.
 
   &:hover {
-    color: var(--color-primary);
+    color: var(--color-primary-dark);
     text-decoration: none;
   }
 }

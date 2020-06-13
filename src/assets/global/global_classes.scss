@@ -9,6 +9,13 @@
         padding: 0;
         min-height: 0;
     }
+    &-pro{
+        min-height: 300px;
+        padding: 15px 0;
+        @include media-breakpoint-up(md){
+            min-height: 1000px;
+        }
+    }
 }
 
 .animated {
@@ -26,9 +33,12 @@
     }
 }
 
-//rtl global 
-[dir="rtl"] {
-    .profile-img{
-        transform: scaleX(-1);
-    }
+.header{
+    margin: 1rem 0 3rem 0;
 }
+// //rtl global 
+// [dir="rtl"] {
+//     .profile-img{
+//         transform: scaleX(-1);
+//     }
+// }
