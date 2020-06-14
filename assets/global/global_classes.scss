@@ -4,6 +4,7 @@
         position: relative;
         // overflow: hidden;
         width: 100%;
+        padding: 15px 0 60px 0;
     }
     &.reset{
         padding: 0;
@@ -51,12 +52,14 @@
 
     }
 }
+.relative{
+    position: relative;
+}
 .header{
     margin: 1rem 0 2rem 0;
 }
 .pro{
     font-size: .875rem;
-    
 }
 // //rtl global 
 // [dir="rtl"] {
