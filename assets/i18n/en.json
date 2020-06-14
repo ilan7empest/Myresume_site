@@ -11,10 +11,22 @@
         "im": "I'm",
         "name": "Ilan Kader",
         "title": "front-end developer & team lead",
-        "button": "Download CV"
+        "eductionTitle": "Education",
+        "button": "Download CV",
+        "sectionTitle": "About me",
+        "aboutDesciotion1": "Web Developer with over 15 years of experience in building websites and marketing tools.",
+        "aboutDesciotion2": "Over the past 6 years i had the opportunity and plessure in Recruiting, Mentoring, Developing and Managing UI/UX team",
+        "aboutDesciotion3": ""
         
     },
     "experience":{
         "title": "experience"
+    },
+    "skills": {
+        "title": "Professional Skills",
+        "Subtitle": "Web Application"
+    },
+    "contact": {
+        "title": "Contact Me"
     }
 }

@@ -2,7 +2,7 @@
 .section{
     &-full{
         position: relative;
-        overflow: hidden;
+        // overflow: hidden;
         width: 100%;
     }
     &.reset{
@@ -11,10 +11,9 @@
     }
     &-pro{
         min-height: 300px;
-        padding: 15px 0;
+        padding: 15px 20px;
         @include media-breakpoint-up(md){
-            min-height: 1000px;
-            padding: 15px 20px;
+            min-height: 1000px; 
         }
     }
 }
@@ -33,12 +32,31 @@
         height: $header-height-scrolled;
     }
 }
+.triangle{
+    &:after{
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -25px;
+        z-index: 10;
+        background: inherit;
+        width: 50px;
+        height: 50px;
+        transform: translateX(-50%) rotate(45deg);
+        @include media-breakpoint-up(md){  
+            bottom: -40px;
+            width: 80px;
+            height: 80px;
+        }
 
+    }
+}
+.header{
+    margin: 1rem 0 2rem 0;
+}
 .pro{
     font-size: .875rem;
-    .header{
-        margin: 1rem 0 2rem 0;
-    }
+    
 }
 // //rtl global 
 // [dir="rtl"] {
