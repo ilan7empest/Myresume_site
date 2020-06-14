@@ -1,0 +1,19 @@
+<ul class="education-list row flex-column-reverse" [ngClass]="{'flex-md-row justify-content-center': !ispro}">
+    <li class="col-12 mb-4" animateOnScroll animationName="fadeIn" *ngFor="let education of educationList"
+        [ngClass]="{'animated col-md-4':!ispro}">
+        <div class="card h-100 text-left">
+            <h6 class="card-header bg--color-primary f--color-white">{{education.diploma}}</h6>
+            <div class="card-body bg--color-contrast-lower f--color-contrast-higher">
+                <span class="card-date f--color-success-darker d-block normal">{{education.date}}</span>
+                <span class="card-title font-weight-bold mb-2 d-block">{{education.school}}</span>
+                <p class="card-text capitalize">
+                    {{education.description}}
+                </p>
+            </div>
+            <div class="card-footer bg--color-contrast-low f--color-contrast-high">
+                {{education.location}}
+            </div>
+        </div>
+    </li>
+</ul>
+

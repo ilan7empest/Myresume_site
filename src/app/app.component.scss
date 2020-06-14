@@ -113,6 +113,15 @@
         text-align: center;
         min-height: 20%;
         width: 100%;
+        &:before{
+            content: '';
+            width: 100%;
+            left: 0;
+            height: 100%;
+            background-color: var(--color-contrast-higher);
+            opacity: 0.3;
+             position: absolute;
+        }
     }
     .download-btn{
         i{

@@ -1,11 +1,11 @@
 <div class="template-selector-tpl d-flex align-items-center">
     <a href="#" type="button" (click)="setValue(ispro?false : true)" routerLink="/about" routerLinkActive="active"
-        [routerLinkActiveOptions]="{exact: true}" *ngIf="!ispro" class="template-selector-btn d-inline-flex align-items-center" alt="Pro View" title="Pro View">
-        <i class="material-icons-outlined mr-2" alt="View Defualt" title="View Defualt">view_quilt</i>
+        [routerLinkActiveOptions]="{exact: true}" *ngIf="!ispro" class="template-selector-btn d-inline-flex align-items-center">
+        <i class="material-icons-outlined mr-2" alt="Pro View" title="Pro View">view_quilt</i>
     </a>
     <a href="#" (click)="setValue(ispro?false : true)" routerLink="/" routerLinkActive="active"
-        [routerLinkActiveOptions]="{exact: true}" *ngIf="ispro" class="template-selector-btn pro f--color-contrast-high d-block text-center py-2">
-        <i class="material-icons-outlined" alt="View Defualt" title="View Defualt">view_stream</i>
+        [routerLinkActiveOptions]="{exact: true}" *ngIf="ispro" class="template-selector-btn pro f--color-contrast-high d-block text-center py-2" alt="Defualt View" title="Defualt View">
+        <i class="material-icons-outlined" alt="Defualt View" title="Defualt View">view_stream</i>
     </a>
 </div>
 

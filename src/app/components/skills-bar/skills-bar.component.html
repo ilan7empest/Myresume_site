@@ -1,11 +1,13 @@
 <div class="skills-bar">
     <ul class="skill-list d-flex flex-column">
-        <li class="d-flex align-items-center animated" animateOnScroll animationName="fadeIn" *ngFor="let skill of skills">
+        <li class="d-flex flex-wrap flex-md-nowrap align-items-center animated" animateOnScroll animationName="fadeIn" *ngFor="let skill of skills">
             <span class="name uppercase">{{skill.name}}</span>
-            <div class="w-100 bg--color-contrast-low">
-                <div class="bar-fill {{skill.class}}" [style.width.%]="skill.percentage"></div>
+            <div class="d-flex flex-nowrap align-items-center w-100">
+                <div class="w-100 bg--color-contrast-low">
+                    <div class="bar-fill {{skill.class}}" [style.width.%]="skill.percentage"></div>
+                </div>
+                <span class="percentage">{{skill.percentage}}%</span>
             </div>
-            <span class="percentage">{{skill.percentage}}%</span>
         </li>
     </ul>
 </div>

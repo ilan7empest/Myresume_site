@@ -1,0 +1,16 @@
+@import "bundle";
+.education-list{
+    .card{
+        border: 0;
+    }
+    p{
+        font-size: 0.775rem;
+    }
+    .animated{
+        transform: scale(0);
+        transition: transform .4s ease-in-out;
+        &.fadeIn{
+            transform: scale(1);
+        }
+    }
+}

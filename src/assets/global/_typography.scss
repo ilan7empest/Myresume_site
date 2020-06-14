@@ -7,6 +7,12 @@
 .uppercase{
    text-transform: uppercase;
 }
+.lowercase{
+   text-transform: lowercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
 h1 {
     @extend %oswald;
     @include font-size-map($h1-font-size);

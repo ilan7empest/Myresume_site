@@ -24,7 +24,8 @@ import { ContactComponent } from './routing/contact/contact.component';
 import { AboutComponent } from './routing/about/about.component';
 import { SkillsBarComponent } from './components/skills-bar/skills-bar.component';
 import { ExperienceBarComponent } from './components/experience-bar/experience-bar.component';
-import { TemplateSelectorComponent } from './components/template-selector/template-selector.component'
+import { TemplateSelectorComponent } from './components/template-selector/template-selector.component';
+import { EducationCardComponent } from './components/education-card/education-card.component'
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { TemplateSelectorComponent } from './components/template-selector/templa
     AboutComponent,
     SkillsBarComponent,
     ExperienceBarComponent,
-    TemplateSelectorComponent
+    TemplateSelectorComponent,
+    EducationCardComponent
   ],
   imports: [
     BrowserModule,
