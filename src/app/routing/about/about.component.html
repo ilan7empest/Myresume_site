@@ -18,10 +18,10 @@
                                 <h2 class="header" *ngIf="ispro">
                                     {{'about.sectionTitle' | translate}}
                                 </h2>
-                                <p>
+                                <p class="uppercase">
                                     {{'about.aboutDesciotion1' | translate}}
                                 </p>
-                                <p>
+                                <p class="uppercase">
                                     {{'about.aboutDesciotion2' | translate}}
                                 </p>
                             </article>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bottom mt-5">
+            <div class="bottom" [ngClass]="{'mt-5' : !ispro}">
                 <div class="row">
                     <div class="col-12">
                          <h2 class="header">{{'about.eductionTitle' | translate}}</h2>

@@ -124,9 +124,10 @@
             }
         }
         .swatch-theme{
+            border-radius: 0 3px 3px 0;
             top: 0;
             left: 100%;
-            margin: 0 0 0 2px;
+            margin: 0 0 0 1px;
             @include media-breakpoint-up(md){
                 display: block ;
                 margin: 0;

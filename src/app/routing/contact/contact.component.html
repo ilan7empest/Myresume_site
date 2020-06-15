@@ -2,9 +2,9 @@
     <div class="scroll-offset" *ngIf="!ispro"></div>
     <div class="text-center f--color-contrast-high d-flex align-items-center">
         <div class="container">
-            <h2 class="header f--color-primary">{{'contact.title' | translate}}</h2>
-            <div class="row text-center">
-                <div class="col-12 mb-4 animated" animateOnScroll animationName="fadeIn" [ngClass]="{'col-md-4 mb-md-0' : !ispro}">
+            <h2 class="header" [ngClass]="{'f--color-primary' : !ispro, 'f--color-contrast-high' : ispro}">{{'contact.title' | translate}}</h2>
+            <div class="row text-center mt-4">
+                <div class="col-12 mt-4 animated" animateOnScroll animationName="fadeIn" [ngClass]="{'col-md-3 mb-md-0' : !ispro}">
                     <a href="tel:+972-523-764820">
                         <span class="icon">
                             <i class="material-icons-outlined">call</i>
@@ -12,19 +12,27 @@
                         <label class="uppercase">+972-523-764820</label>
                     </a>
                 </div>
-                <div class="col-12 mb-4 animated" animateOnScroll animationName="fadeIn" [ngClass]="{'col-md-4 mb-md-0' : !ispro}">
+                <div class="col-12 mt-4 animated" animateOnScroll animationName="fadeIn" [ngClass]="{'col-md-3 mb-md-0' : !ispro}">
                     <a href="https://mail.google.com/a/gmail.com/?view=cm&fs=1&to=ilank7@gmail.com" target="_blank">
                         <span class="icon">
                             <i class="material-icons-outlined">alternate_email</i>
                         </span>
-                        <label class="uppercase">ilank7@gmail.com</label>
+                        <label class="capitalize">ilank7@gmail.com</label>
                     </a>
                 </div>
-                <div class="col-12 mb-4 animated" animateOnScroll animationName="fadeIn" [ngClass]="{'col-md-4 mb-md-0' : !ispro}">
+                <div class="col-12 mt-4 animated" animateOnScroll animationName="fadeIn" [ngClass]="{'col-md-3 mb-md-0' : !ispro}">
+                    <a href="https://www.linkedin.com/in/ilan-kader-20417618/" target="_blank">
+                        <span class="icon">
+                            <i class="material-icons-outlined">link</i>
+                        </span>
+                        <label class="capitalize">LinkedIn</label>
+                    </a>
+                </div>
+                <div class="col-12 mt-4 animated" animateOnScroll animationName="fadeIn" [ngClass]="{'col-md-3 mb-md-0' : !ispro}">
                     <span class="icon d-block">
                         <i class="material-icons-outlined">location_on</i>
                     </span>
-                    <label class="uppercase">Natanya</label>
+                    <label class="capitalize">Natanya</label>
                 </div>
             </div>
         </div>
