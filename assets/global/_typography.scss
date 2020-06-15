@@ -17,22 +17,25 @@ h1 {
     @extend %oswald;
     @include font-size-map($h1-font-size);
     @extend %h-global-style; 
+    text-transform: uppercase;
 }
 h2{
     @extend %oswald;
     @include font-size-map($h2-font-size);
     @extend %h-global-style; 
     font-weight: bold !important;
+    text-transform: uppercase;
 }
 h3 {
     @extend %oswald;
     @include font-size-map($h3-font-size);
     @extend %h-global-style;  
+    text-transform: uppercase;
 }
 h4{
     @include font-size-map($h4-font-size);
 }
 p{
-    @extend %h-global-style; 
+    @extend %h-global-style;
 }
   

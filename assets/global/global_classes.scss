@@ -60,6 +60,10 @@
 }
 .pro{
     font-size: .875rem;
+    .header{
+        @include font-size-map($h2-pro-font-size);
+        text-align: center;
+    }
 }
 // //rtl global 
 // [dir="rtl"] {
