@@ -59,7 +59,7 @@
   @include defineColorHSL(--color-bg, 0, 0%, 100%);
   @include defineColorHSL(--color-contrast-lower, 0, 0%, 96%);
   @include defineColorHSL(--color-contrast-low, 240, 1%, 85%);
-  @include defineColorHSL(--color-contrast-medium, 270, 1%, 54%);
+  @include defineColorHSL(--color-contrast-medium, 270, 1%, 57%);
   @include defineColorHSL(--color-contrast-high, 280, 2%, 28%);
   @include defineColorHSL(--color-contrast-higher, 280, 3%, 21%);
 }
@@ -88,7 +88,7 @@
     @include defineColorHSL(--color-bg, 280, 3%, 21%);
     @include defineColorHSL(--color-contrast-lower, 280, 2%, 15%);
     @include defineColorHSL(--color-contrast-low, 280, 2%, 30%);
-    @include defineColorHSL(--color-contrast-medium, 300, 0%, 57%);
+    @include defineColorHSL(--color-contrast-medium, 300, 0%, 50%);
     @include defineColorHSL(--color-contrast-high, 240, 1%, 83%);
     @include defineColorHSL(--color-contrast-higher, 0, 0%, 91%);
   }

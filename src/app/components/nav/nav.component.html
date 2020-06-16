@@ -1,4 +1,4 @@
-<button *ngIf="!ispro" type="button" class="toggle-nav align-self-center my-2 d-md-none" (click)="sideNavBtnToggle()"
+<button *ngIf="!ispro" type="button" class="toggle-nav align-self-center my-2 d-lg-none" (click)="sideNavBtnToggle()"
     [ngClass]="{ 'active': tsNav }">
     <i class="nav-icon"></i>
 </button>
@@ -15,17 +15,16 @@
                 <label>{{'nav.experience' | translate}}</label>
             </button>
         </li>
+        <li class="projects">
+            <button type="text" class="" (click)="elScroll('projects')" data-attr="projects">
+                <label>{{'nav.projects' | translate}}</label>
+            </button>
+        </li>
         <li class="skills">
             <button type="text" class="" (click)="elScroll('skills')" data-attr="skills">
                 <label>{{'nav.skills' | translate}}</label>
             </button>
         </li>
-        <!-- <li class="gallery">
-            <button type="text" class="" routerLink="gallery" routerLinkActive="active-link"
-                [routerLinkActiveOptions]="{exact: true}">
-                <label>{{'nav.gallery' | translate}}</label>
-            </button>
-        </li> -->
         <li class="contact">
             <button type="text" class="" (click)="elScroll('contact')" data-attr="contact">
                 <label>{{'nav.contact' | translate}}</label>
@@ -50,6 +49,13 @@
                 <label>{{'nav.experience' | translate}}</label>
             </button>
         </li>
+        <li class="projects">
+            <button type="text" class="" routerLink="projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                        true}">
+                <i class="material-icons-outlined" attr.alt="{{'nav.projects' | translate | uppercase}}" attr.title="{{'nav.projects' | translate | uppercase}}">build</i>
+                <label>{{'nav.projects' | translate}}</label>
+            </button>
+        </li>
         <li class="skills">
             <button type="text" class="" routerLink="skills" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
         true}">
@@ -57,12 +63,6 @@
                 <label>{{'nav.skills' | translate}}</label>
             </button>
         </li>
-        <!-- <li class="gallery">
-            <button type="text" class="" routerLink="gallery" routerLinkActive="active-link"
-                [routerLinkActiveOptions]="{exact: true}">
-                <label>{{'nav.gallery' | translate}}</label>
-            </button>
-        </li> -->
         <li class="contact">
             <button type="text" class="" routerLink="contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
         true}">

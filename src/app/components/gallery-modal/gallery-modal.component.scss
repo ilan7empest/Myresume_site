@@ -1,0 +1,49 @@
+
+@import "bundle";
+.gallery-modal-tpl{
+    .img-description{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+        color: var(--color-contrast-lower);
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-contrast-high);
+            opacity: .8;
+        }
+        h6{
+            margin: 0;
+            font-weight: bold;
+        }
+    }
+    &.pro{
+        .jumbotron{
+            padding: 0 1rem 2rem;
+            @include media-breakpoint-up(md){
+                padding: 2rem;
+            }
+        }
+    }
+    
+    //Modal Images
+    ::ng-deep{
+        .ng-overlay{
+            opacity: .9;
+        }
+        .modal-gallery-wrapper{
+            direction: ltr;
+        }
+        a[role=button]{
+            padding: 0;
+            min-width: auto;
+        }
+    }
+}

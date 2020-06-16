@@ -1,0 +1,66 @@
+
+<div class="gallery-modal-tpl" [ngClass]="{'pro' : ispro}">
+    <div class="d-flex flex-column">
+        <div class="jumbotron" [ngClass]="{'f--color-contrast-higher bg--color-contrast-lower animated' : !ispro, 'f--color-contrast-higher bg--color-contrast-low': ispro}" animateOnScroll animationName="fadeIn">
+            <div class="row">
+                <div class="col-12" [ngClass]="{'col-md-6' : !ispro, 'order-2': ispro}">
+                    <div class="img-container">
+                        <ks-modal-gallery *ngIf="!ispro" [id]="200" [modalImages]="leumiImages" [plainGalleryConfig]="plainGalleryRow">
+                        </ks-modal-gallery>
+                        <div *ngIf="ispro">
+                            <div *ngFor="let image of leumiImages" class="relative mt-4">
+                                <img src="{{image.modal.img}}" class="w-100" alt="{{image.modal.description}}" title="{{image.modal.description}}" />
+                                <div class="img-description">
+                                    <h6 class="relative uppercase">{{image.modal.description}}</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" [ngClass]="{'col-md-6' : !ispro, 'order-1': ispro}">
+                    <div class="project-description mt-4 mt-md-0 text-left" [ngClass]="{'pl-0 pl-md-3 pl-lg-5' : !ispro}">
+                        <h4>Bank Leumi - Angular 2</h4>
+                        <p class="mt-4">
+                            <span class="d-block">Site infrastructure update from AngularJS to Angular2</span>
+                            <span class="d-block mt-3">Upgrade to Bootstrap 4 including code rewrite from LESS to SCSS</span>
+                            <span class="d-block mt-3">Building reusable form and web components</span>
+                        </p>
+                        <p class="mt-4">
+                            <span>ANGULAR 2, BOOTSTRAP 4, SCSS</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron" [ngClass]="{'f--color-contrast-higher bg--color-contrast-lower animated' : !ispro, 'f--color-contrast-higher bg--color-contrast-low': ispro}" animateOnScroll animationName="fadeIn">
+            <div class="row">
+                <div class="col-12" [ngClass]="{'col-md-6' : !ispro, 'order-2': ispro}">
+                    <div class="img-container">
+                        <ks-modal-gallery *ngIf="!ispro" [id]="201" [modalImages]="leumijsImages" [plainGalleryConfig]="plainGalleryRow"></ks-modal-gallery>
+
+                        <div *ngIf="ispro">
+                            <div *ngFor="let image of leumiImages" class="relative mt-4">
+                                <img src="{{image.modal.img}}" class="w-100" alt="{{image.modal.description}}" title="{{image.modal.description}}" />
+                                <div class="img-description">
+                                    <h6 class="relative uppercase">{{image.modal.description}}</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" [ngClass]="{'col-md-6' : !ispro, 'order-1': ispro}">
+                    <div class="project-description mt-4 mt-md-0 text-left" [ngClass]="{'pl-0 pl-md-3 pl-lg-5' : !ispro}">
+                        <h4>Bank Leumi - AngularJS</h4>
+                        <p class="mt-4">
+                            <span class="d-block">Site re-brand and restructure from a .asp to AngularJS</span>
+                            <span class="d-block mt-3">Implementation of a new Responsive Design</span>
+                        </p>
+                        <p class="mt-4">
+                            <span>ANGULARJS, BOOTSTRAP 3, LESS</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

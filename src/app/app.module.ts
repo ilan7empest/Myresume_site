@@ -6,6 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { NgScrollbarModule } from 'ngx-scrollbar';
 
+// ********************** angular-modal-gallery *****************************
+import 'hammerjs'; // Mandatory for angular-modal-gallery 3.x.x or greater (`npm i --save hammerjs`)
+import 'mousetrap'; // Mandatory for angular-modal-gallery 3.x.x or greater (`npm i --save mousetrap`)
+import { GalleryModule } from '@ks89/angular-modal-gallery'; // <----------------- angular-modal-gallery library import
+
+
 import { TemplateSelectorService } from './services/template-selector.service';
 
 
@@ -25,7 +31,9 @@ import { AboutComponent } from './routing/about/about.component';
 import { SkillsBarComponent } from './components/skills-bar/skills-bar.component';
 import { ExperienceBarComponent } from './components/experience-bar/experience-bar.component';
 import { TemplateSelectorComponent } from './components/template-selector/template-selector.component';
-import { EducationCardComponent } from './components/education-card/education-card.component'
+import { EducationCardComponent } from './components/education-card/education-card.component';
+import { GalleryModalComponent } from './components/gallery-modal/gallery-modal.component';
+import { ProjectsComponent } from './routing/projects/projects.component'
 
 @NgModule({
   declarations: [
@@ -44,13 +52,16 @@ import { EducationCardComponent } from './components/education-card/education-ca
     SkillsBarComponent,
     ExperienceBarComponent,
     TemplateSelectorComponent,
-    EducationCardComponent
+    EducationCardComponent,
+    GalleryModalComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     I18nModule,
     NgScrollbarModule,
+    GalleryModule.forRoot(),
     AnimateOnScrollModule.forRoot()
   ],
   providers: [TemplateSelectorService],
