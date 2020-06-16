@@ -12,8 +12,10 @@
     }
     &-pro{
         min-height: 300px;
-        padding: 15px 20px;
+        padding: 15px 0;
+        background-color: var(--color-contrast-lower);
         @include media-breakpoint-up(md){
+            padding: 15px 20px;
             min-height: 1000px; 
         }
     }
@@ -65,9 +67,18 @@
         text-align: center;
     }
 }
-// //rtl global 
+//rtl global 
 // [dir="rtl"] {
-//     .profile-img{
-//         transform: scaleX(-1);
+//     .nav-pro{
+//         .main-nav{
+//             li{
+//                 button{
+//                     label{
+//                         left: 0;
+//                         right: 58px;
+//                     }
+//                 }
+//             }
+//         }
 //     }
 // }

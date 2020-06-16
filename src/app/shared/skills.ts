@@ -36,13 +36,6 @@ export const SKILLS: Skill[] = [
         name: 'Angular',
         class: '',
         percentage: 20
-    }
-    ,
-    {
-        category: 'tools',
-        name: 'git',
-        class: '',
-        percentage: 30
     },
     {
         category: 'design',
@@ -67,5 +60,17 @@ export const SKILLS: Skill[] = [
         name: 'agile',
         class: '',
         percentage: 60
-   }
+    },
+    {
+        category: 'tools',
+        name: 'nodejs',
+        class: '',
+        percentage: 35
+    },
+    {
+        category: 'tools',
+        name: 'git',
+        class: '',
+        percentage: 40
+    }
 ]

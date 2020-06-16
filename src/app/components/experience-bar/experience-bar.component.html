@@ -1,4 +1,4 @@
-<ul class="experience-list d-flex flex-column justify-content-start">
+<ul class="experience-list d-flex flex-column justify-content-start" [ngClass]="{'pro':ispro}">
     <li animateOnScroll animationName="fadeIn" *ngFor="let experience of experienceList" [ngClass]="{'animated':!ispro}">
         <span class="date f--color-success-darker d-block normal">{{experience.date}}</span>
         <label>{{experience.company}}</label>

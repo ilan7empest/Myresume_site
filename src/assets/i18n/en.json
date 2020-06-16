@@ -3,6 +3,7 @@
         "about": "about",
         "skills": "skills",
         "experience": "experience",
+        "projects": "recent projects",
         "gallery": "gallery",
         "contact": "contact"
     },
@@ -21,6 +22,9 @@
     },
     "experience":{
         "title": "experience"
+    },
+    "projects": {
+        "title": "Recent Projects"
     },
     "skills": {
         "title": "Professional Skills",

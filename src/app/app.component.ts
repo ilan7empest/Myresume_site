@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
       } else {
         window.clearInterval(scrollToTop);
       }
-    }, 16);
+    }, 10);
   }
 
   ngOnInit() {
