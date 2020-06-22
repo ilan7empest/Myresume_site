@@ -7,19 +7,22 @@ export const EXPERIENCELIST: Experience[] = [
         jobTitle: 'UX/UI Team Leader',
         description: [
             {
-                description: 'Building and managing a team of 6 programmers.'
+                description: 'Head of an Angular development team (Management)'
             },
             {
-                description: 'In charge of an Angular development team (Management).'
+                description: 'Building and managing a team of 6 programmers'
             },
             {
-                description: 'Rebuilding the secure site using responsive design.'
+                description: 'Overseeing development from product design concept to integration across multiple teams'
             },
             {
-                description: 'Oversee development from concept to integration.'
+                description: 'Responsible for the entire UI/UX Development, Guidelines, Standards and Solutions'
             },
             {
-                description: 'Responsible for the entire UI/UX Development and Solutions.'
+                description: 'Design overview, directly working, consulting and guiding UX Studio teams'
+            },
+            {
+                description: 'Managing various design activities'
             }
         ]
     },
