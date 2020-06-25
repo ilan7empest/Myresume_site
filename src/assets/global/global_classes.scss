@@ -35,25 +35,25 @@
         height: $header-height-scrolled;
     }
 }
-.triangle{
-    &:after{
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: -25px;
-        z-index: 10;
-        background: inherit;
-        width: 50px;
-        height: 50px;
-        transform: translateX(-50%) rotate(45deg);
-        @include media-breakpoint-up(md){  
-            bottom: -40px;
-            width: 80px;
-            height: 80px;
-        }
+// .triangle{
+//     &:after{
+//         content: '';
+//         position: absolute;
+//         left: 50%;
+//         bottom: -25px;
+//         z-index: 10;
+//         background: inherit;
+//         width: 50px;
+//         height: 50px;
+//         transform: translateX(-50%) rotate(45deg);
+//         @include media-breakpoint-up(md){  
+//             bottom: -40px;
+//             width: 80px;
+//             height: 80px;
+//         }
 
-    }
-}
+//     }
+// }
 .relative{
     position: relative;
 }
