@@ -11,6 +11,12 @@
         @include media-breakpoint-up(md){  
             min-height: 650px;  
         }
+        &.triangle{
+            margin-bottom: 40px;
+            @include media-breakpoint-up(md){  
+                margin-bottom: 60px;  
+            }
+        }
         &.pro{
            background: var(--color-contrast-lower);
         }
