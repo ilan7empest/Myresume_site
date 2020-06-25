@@ -9,26 +9,30 @@
         background: var(--color-success-dark);
         transition: width .4s ease-in;
     }
-    .skill-list{
+    li{
+        transform: translateX(-10px);
+        margin-bottom: 1rem;
+        &.fadeIn{
+            transform: translateX(0);
+            transition: transform .4s ease-in;
+        }
+        @include media-breakpoint-up(md){
+                transform: translateX(-70px);
+        }
+    }
+    .name{
+        flex: 0 0 125px;
+        max-width: 125px;
+        text-align: left;
+        margin-right: 1rem;
+    }
+    .percentage{
+        margin-left: 1rem;
+    }
+    &.pro{
         li{
-            transform: translateX(-10px);
-            margin-bottom: 1rem;
-            &.fadeIn{
-                transform: translateX(0);
-                transition: transform .4s ease-in;
-            }
-            @include media-breakpoint-up(md){
-                 transform: translateX(-70px);
-            }
-        }
-        .name{
-            flex: 0 0 125px;
-            max-width: 125px;
-            text-align: left;
-            margin-right: 1rem;
-        }
-        .percentage{
-            margin-left: 1rem;
+            transform: translateX(0);
         }
     }
 }
+    

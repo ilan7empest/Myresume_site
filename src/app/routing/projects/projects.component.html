@@ -1,12 +1,14 @@
-<section class="projects-tpl section-full" [ngClass]="{'bg--color-contrast-low' : !ispro, 'section-pro pro' : ispro}">
-    <div class="scroll-offset" *ngIf="!ispro"></div>
-    <div class="text-center f--color-contrast-higher d-flex align-items-center">
-        <div class="container animated" animateOnScroll animationName="fadeIn">
-            <h2 class="header">
-                {{'projects.title' | translate}}
-            </h2>
-            <app-gallery-modal></app-gallery-modal>
+<ng-scrollbar #projectsScrollPro track="all" pointerEventsMethod="scrollbar">
+    <section class="projects-tpl section-full" [ngClass]="{'bg--color-contrast-low' : !ispro, 'section-pro pro' : ispro}">
+        <div class="scroll-offset" *ngIf="!ispro"></div>
+        <div class="text-center f--color-contrast-higher d-flex align-items-center">
+            <div class="container animated" animateOnScroll animationName="fadeIn">
+                <h2 class="header">
+                    {{'projects.title' | translate}}
+                </h2>
+                <app-gallery-modal></app-gallery-modal>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+</ng-scrollbar>
 
