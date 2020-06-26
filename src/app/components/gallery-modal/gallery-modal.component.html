@@ -9,7 +9,7 @@
                         </ks-modal-gallery>
                         <div *ngIf="ispro">
                             <div *ngFor="let image of leumiImages" class="relative mt-4">
-                                <img src="{{image.modal.img}}" class="w-100" alt="{{image.modal.description}}" title="{{image.modal.description}}" />
+                                <img src="{{image.modal.img}}" loading="lazy" class="w-100" alt="{{image.modal.description}}" title="{{image.modal.description}}" />
                                 <div class="img-description">
                                     <h6 class="relative uppercase">{{image.modal.description}}</h6>
                                 </div>
