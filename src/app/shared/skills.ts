@@ -5,72 +5,84 @@ export const SKILLS: Skill[] = [
         category: 'tools',
         name: 'html',
         class: '',
-        percentage: 92
+        level: 'Expert',
+        percentage: 86
     },
     {
         category: 'tools',
         name: 'CSS 2/3',
         class: '',
-        percentage: 86
+        level: 'Expert',
+        percentage: 84
     },
     {
         category: 'tools',
         name: 'SCSS',
         class: '',
-        percentage: 80
+        level: 'Intermediate',
+        percentage: 70
     },
     {
         category: 'tools',
         name: 'LESS',
         class: '',
-        percentage: 72
+        level: 'Advanced',
+        percentage: 65
     },
     {
         category: 'tools',
-        name: 'js',
+        name: 'JS',
         class: '',
-        percentage: 40
+        level: 'Advanced',
+        percentage: 42
     },
     {
         category: 'tools',
-        name: 'Angular',
+        name: 'Angular 2',
         class: '',
-        percentage: 20
+        level: 'Intermediate',
+        percentage: 36
     },
     {
         category: 'design',
         name: 'bootstrap',
         class: '',
-        percentage: 94
+        level: 'Expert',
+        percentage: 85
     },
     {
         category: 'design',
         name: 'ux/ui',
         class: 'ux',
-        percentage: 90
+        level: 'Expert',
+        percentage: 80
     },
     {
         category: 'design',
         name: 'photoshop',
         class: '',
-        percentage: 70
+        level: 'Advanced',
+        percentage: 78
     },
     {
         category: 'work',
         name: 'agile',
         class: '',
-        percentage: 60
+        level: 'Advanced',
+        percentage: 70
     },
     {
         category: 'tools',
         name: 'nodejs',
         class: '',
-        percentage: 35
+        level: 'Elementary',
+        percentage: 30
     },
     {
         category: 'tools',
         name: 'git',
         class: '',
-        percentage: 40
+        level: 'Elementary',
+        percentage: 35
     }
 ]

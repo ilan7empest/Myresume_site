@@ -115,7 +115,9 @@
             height: 100%;
             width: 100%;
             min-height: 50px;
+            max-height: 50px;
             border-radius: 0;
+            transition: none;
             &:before{
                     height: 100%;
                     width: 50%;
