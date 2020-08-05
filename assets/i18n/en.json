@@ -1,36 +1,35 @@
 {
-    "nav": {
-        "about": "about",
-        "skills": "skills",
-        "experience": "experience",
-        "projects": "recent projects",
-        "gallery": "gallery",
-        "contact": "contact"
-    },
-    "about": {
-        "hi": "Hi",
-        "im": "I'm",
-        "name": "Ilan Kader",
-        "title": "front-end developer & team lead",
-        "eductionTitle": "Education",
-        "button": "Download CV",
-        "sectionTitle": "About me",
-        "aboutDesciotion1": "Web Developer with over 15 years of experience in building websites and marketing tools.",
-        "aboutDesciotion2": "Over the past 6 years i had the opportunity and plessure in Recruiting, Mentoring, Developing and Managing UI/UX team",
-        "aboutDesciotion3": ""
-        
-    },
-    "experience":{
-        "title": "experience"
-    },
-    "projects": {
-        "title": "Recent Projects"
-    },
-    "skills": {
-        "title": "Professional Skills",
-        "Subtitle": "Web Application"
-    },
-    "contact": {
-        "title": "Contact Me"
-    }
+  "nav": {
+    "about": "about",
+    "skills": "skills",
+    "experience": "experience",
+    "projects": "recent projects",
+    "gallery": "gallery",
+    "contact": "contact"
+  },
+  "about": {
+    "hi": "Hi",
+    "im": "I'm",
+    "name": "Ilan Kader",
+    "title": "front-end developer & team lead",
+    "eductionTitle": "Education",
+    "button": "Download CV",
+    "sectionTitle": "About me",
+    "aboutDesciotion1": "Front End developer with 15+ years of experience in building and developing large scale responsive websites and promotional tools.",
+    "aboutDesciotion2": "Experienced in team lead, code reviews, consultation and handling multi tasks",
+    "aboutDesciotion3": ""
+  },
+  "experience": {
+    "title": "experience"
+  },
+  "projects": {
+    "title": "Recent Projects"
+  },
+  "skills": {
+    "title": "Professional Skills",
+    "Subtitle": "Web Application"
+  },
+  "contact": {
+    "title": "Contact Me"
+  }
 }
