@@ -1,50 +1,64 @@
 <div class="app-wrapper" *ngIf="!ispro">
-    <ts-header id="header" class="d-flex"></ts-header>
-    
-    <main id="main">
-        <router-outlet (activate)="onActivate($event)"></router-outlet>
-        <ts-scroll-top></ts-scroll-top>
-    </main>
-    <!-- <aside></aside> -->
-    <ts-footer></ts-footer>
+  <ts-header id="header" class="d-flex"></ts-header>
+
+  <main id="main">
+    <router-outlet (activate)="onActivate($event)"></router-outlet>
+    <ts-scroll-top></ts-scroll-top>
+  </main>
+  <!-- <aside></aside> -->
+  <ts-footer></ts-footer>
 </div>
 
-
 <div class="app-cv" *ngIf="ispro">
-    <div class="container h-100">
-        <div class="row h-100 no-gutters overflow-hidden">
-            <div class="col col-md-6 left-side">
-               <div class="d-flex h-100 align-items-strach">
-                    <aside class="menu d-flex flex-column my-0 my-md-4">
-                        <theme-picker id="themePickerPro"></theme-picker>
-                        <ts-header id="header-pro"></ts-header>
-                        <ts-nav id="navPro" class="h-100 bg--color-contrast-lower d-flex align-items-center"></ts-nav>
-                        <app-template-selector></app-template-selector>
-                        <div class="bg--color-primary-dark">
-                            <a href="https://drive.google.com/file/d/14bjnWJzF2oUp1aB8xAnHUxfpsTv7cW1A/view?usp=sharing" target="_blank"
-                                class="download-btn d-block text-center py-2" attr.alt="{{'about.button' | translate}}">
-                                <i class="material-icons-outlined" attr.alt="{{'about.button' | translate | uppercase}}"
-                                    attr.title="{{'about.button' | translate | uppercase}}">cloud_download</i>
-                            </a>
-                        </div>
-                    </aside>
-                    <div class="profile d-none d-md-flex">
-                        <div class="profile-img"></div>
-                        <div class="profile-info f--color-contrast-lower d-flex flex-column justify-content-center">
-                            <h3 class="relative">{{'about.name' | translate}}</h3>
-                            <h5 class="relative">{{'about.title' | translate | uppercase}}</h5>
-                        </div>
-                    </div>
-               </div>
+  <div class="container h-100">
+    <div class="row h-100 no-gutters overflow-hidden">
+      <div class="col col-md-6 left-side">
+        <div class="d-flex h-100 align-items-strach">
+          <aside class="menu d-flex flex-column my-0 my-md-4">
+            <theme-picker id="themePickerPro"></theme-picker>
+            <ts-header id="header-pro"></ts-header>
+            <ts-nav
+              id="navPro"
+              class="h-100 bg--color-contrast-lower d-flex align-items-center"
+            ></ts-nav>
+            <app-template-selector></app-template-selector>
+            <div class="bg--color-primary-dark">
+              <a
+                href="https://drive.google.com/file/d/1tARIqbfiG1KyTPWJbw2ObrQNLUAm-WUx/view?usp=sharing"
+                target="_blank"
+                class="download-btn d-block text-center py-2"
+                attr.alt="{{ 'about.button' | translate }}"
+              >
+                <i
+                  class="material-icons-outlined"
+                  attr.alt="{{ 'about.button' | translate | uppercase }}"
+                  attr.title="{{ 'about.button' | translate | uppercase }}"
+                  >cloud_download</i
+                >
+              </a>
             </div>
-            <div class="col col-md-6">
-                <main id="main-pro">
-                    <div class="content my-0 my-md-3">
-                        <router-outlet></router-outlet>
-                    </div>
-                </main>
+          </aside>
+          <div class="profile d-none d-md-flex">
+            <div class="profile-img"></div>
+            <div
+              class="profile-info f--color-contrast-lower d-flex flex-column justify-content-center"
+            >
+              <h3 class="relative">{{ "about.name" | translate }}</h3>
+              <h5 class="relative">
+                {{ "about.title" | translate | uppercase }}
+              </h5>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="col col-md-6">
+        <main id="main-pro">
+          <div class="content my-0 my-md-3">
+            <router-outlet></router-outlet>
+          </div>
+        </main>
+      </div>
     </div>
+  </div>
 </div>
 <!-- <ts-footer></ts-footer> -->

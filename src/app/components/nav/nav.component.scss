@@ -59,7 +59,8 @@
                 width: 100%;
                 min-width: 100%; 
                 &:hover,
-                &.active{
+                &.active,
+                &:focus{
                     label{
                         &:after{
                         content: "";

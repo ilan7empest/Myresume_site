@@ -61,7 +61,7 @@
         }
     }
     .logo{
-        cursor: default;
+        cursor: pointer;
         @extend %oswald;
         color: var(--color-primary-dark);
         font-size: 1.4rem;

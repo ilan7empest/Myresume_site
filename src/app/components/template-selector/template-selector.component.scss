@@ -6,7 +6,8 @@
         padding: 0;
         min-width: auto;
         transition: color .2s ease-in;
-        &:hover{
+        &:hover,
+        &:focus{
             color: var(--color-primary);
         }
         i{

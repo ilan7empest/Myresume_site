@@ -60,6 +60,9 @@
             background-color: var(--color-primary);
             transform: translateX(10px);
        }
+       &:focus{
+            outline: 1px solid var(--contrast-light);
+        }
     }
     .swatch-theme{
         position: absolute;

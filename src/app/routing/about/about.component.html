@@ -1,54 +1,73 @@
 <ng-scrollbar #aboutScrollPro track="all" pointerEventsMethod="scrollbar">
-    <section class="about-tpl section-full" [ngClass]="{'intro-bg':!ispro, 'section-pro pro':ispro}">
-        <div class="scroll-offset" *ngIf="!ispro"></div>
-        <div class="text-center d-flex align-items-center" [ngClass]="{'f--color-white':!ispro, 'f--color-contrast-higher':ispro}"> 
-            <div class="container animated" animateOnScroll animationName="fadeIn">
-                <div class="top">
-                    <div class="row">
-                        <div class="col-12 col-md-6 mb-3 text-left uppercase" *ngIf="!ispro">
-                            <h2>
-                                <span
-                                    class="mr-2 f--color-primary">{{'about.hi' | translate}},</span><span>{{'about.im' | translate}}</span>
-                            </h2>
-                            <h1 class="title mb-2">{{'about.name' | translate}}</h1>
-                            <h4 class="d-block f--color-primary">{{'about.title' | translate}}</h4>
-                        </div>
-                        <div class="col-12 text-left">
-                            <div class="d-flex flex-column">
-                                <article>
-                                    <h2 class="header" *ngIf="ispro">
-                                        {{'about.sectionTitle' | translate}}
-                                    </h2>
-                                    <p class="uppercase">
-                                        {{'about.aboutDesciotion1' | translate}}
-                                    </p>
-                                    <p class="uppercase">
-                                        {{'about.aboutDesciotion2' | translate}}
-                                    </p>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="my-3 text-left resume-btn">
-                                <a href="https://drive.google.com/file/d/14bjnWJzF2oUp1aB8xAnHUxfpsTv7cW1A/view?usp=sharing" target="_blank"
-                                    class="ts-btn-primary px-5 py-2 d-inline-flex" role="button">
-                                    {{'about.button' | translate}}
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom" [ngClass]="{'mt-5' : !ispro}">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="header">{{'about.eductionTitle' | translate}}</h2>
-                            <app-education-card></app-education-card>
-                        </div>
-                    </div>
-                </div>
+  <section
+    class="about-tpl section-full"
+    [ngClass]="{ 'intro-bg': !ispro, 'section-pro pro': ispro }"
+  >
+    <div class="scroll-offset" *ngIf="!ispro"></div>
+    <div
+      class="text-center d-flex align-items-center"
+      [ngClass]="{
+        'f--color-white': !ispro,
+        'f--color-contrast-higher': ispro
+      }"
+    >
+      <div class="container animated" animateOnScroll animationName="fadeIn">
+        <div class="top">
+          <div class="row">
+            <div
+              class="col-12 col-md-6 mb-3 text-left uppercase"
+              *ngIf="!ispro"
+            >
+              <h2>
+                <span class="mr-2 f--color-primary"
+                  >{{ "about.hi" | translate }},</span
+                ><span>{{ "about.im" | translate }}</span>
+              </h2>
+              <h1 class="title mb-2">{{ "about.name" | translate }}</h1>
+              <h4 class="d-block f--color-primary">
+                {{ "about.title" | translate }}
+              </h4>
             </div>
+            <div class="col-12 text-left">
+              <div class="d-flex flex-column">
+                <article>
+                  <h2 class="header" *ngIf="ispro">
+                    {{ "about.sectionTitle" | translate }}
+                  </h2>
+                  <p class="uppercase">
+                    {{ "about.aboutDesciotion1" | translate }}
+                  </p>
+                  <p class="uppercase">
+                    {{ "about.aboutDesciotion2" | translate }}
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="my-3 text-left resume-btn">
+                <a
+                  href="https://drive.google.com/file/d/1tARIqbfiG1KyTPWJbw2ObrQNLUAm-WUx/view?usp=sharing"
+                  target="_blank"
+                  class="ts-btn-primary px-5 py-2 d-inline-flex"
+                  role="button"
+                >
+                  {{ "about.button" | translate }}
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+        <div class="bottom" [ngClass]="{ 'mt-5': !ispro }">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="header">{{ "about.eductionTitle" | translate }}</h2>
+              <app-education-card></app-education-card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </ng-scrollbar>
